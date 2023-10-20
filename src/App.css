@@ -1,42 +1,75 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
 
+/* LOGO ANIMATION */
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+    display: inline-flex;
+    overflow: hidden; 
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.char {
+    display: block;
+    transition: transform .7s, transform 1s;
+}
+
+.a:hover {
+    transform: translateY(-100%);
+}
+
+.v:hover {
+    transform: translateY(-100%);
+}
+
+.e:hover {
+    transform: translateY(-100%);
+}
+
+.char.a::after {
+    content: "<";
+    display: block;
+    transform: translateY(100%);
+}
+
+.char.v::after {
+    content: "/";
+    display: block;
+    transform: translateY(100%);
+}
+
+.char.e::after {
+    content: ">";
+    display: block;
+    transform: translateY(100%);
+}
+
+
+/* NAV SPARK ANIMATION */
+
+@keyframes sparkAround {
+    0% {
+      top: 0;
+      left: 0;
+      right: auto;
+      bottom: auto;
+    }
+    25% {
+      top: 0;
+      right: 0;
+      left: auto;
+      bottom: auto;
+    }
+    50% {
+      right: 0;
+      bottom: 0;
+      top: auto;
+      left: auto;
+    }
+    75% {
+      bottom: 0;
+      left: 0;
+      top: auto;
+      right: auto;
+    }
+    100% {
+      top: 0;
+      left: 0;
+    }
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}

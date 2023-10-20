@@ -1,0 +1,19 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+:root{
+    --background-color: #BBC8DE;
+    --text-color: #010307;
+}
+
+.dark:root{
+    --background-color: #010307;
+    --text-color: #BBC8DE;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
