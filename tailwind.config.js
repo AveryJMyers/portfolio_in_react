@@ -7,12 +7,18 @@ export default {
   darkMode:'class', 
   theme: {
     extend: {
+      fontFamily: {
+        'pangolin': ['Roboto Mono', 'monospace'],
+      }, 
       colors: {
         navy: '#192E41',
         blue: '#071330',
         serenity:'#BBC8DE',
         black:'#010307'
-      }
+      },
+      borderRadius: {
+        '4xl': '2rem',
+      },
     }
   },
   plugins: [],

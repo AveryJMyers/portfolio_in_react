@@ -6,6 +6,8 @@
 :root{
     --background-color: #BBC8DE;
     --text-color: #010307;
+    margin: 0 13% 0 13%;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .dark:root{
@@ -14,6 +16,10 @@
 }
 
 body {
+    margin:0;
+    padding:0;
     background-color: var(--background-color);
     color: var(--text-color);
 }
+
+
