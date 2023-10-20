@@ -3,10 +3,11 @@ import '../App.css';
 
 function LogoAnimation() {
     return (
-        <div className="logo text-md border-b border-black flex items-center justify-between items-center">
-            <span className="char a">A</span>
-            <span className="char v">V</span>
-            <span className="char e">E</span>
+        <div className="logo inline flex bold text-lg">
+            <div className="char less-than">&lt;</div>
+            <div className="char slash">/</div>
+            <div className="char greater-than">&gt;</div>
+            <div className="ave">AVE</div>
         </div>
     );
 }

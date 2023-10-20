@@ -34,14 +34,18 @@ export default function Header() {
     ]
     return (
         <>
-            <ThemeToggler/>
-            <div className="text-md flex items-start justify-end p-4">
-                {navOptions.map((option, index) => (
-                    <a key={index} href={option.link || '#'} className=" navLink transform hover:scale-110 hover:text-blue-500 mr-4 last:mr-0">
-                        {option.name}
-                    </a>
-                ))}
+            <div className='text-md flex items-baseline p-4'>
+                <ThemeToggler/>
+                <LogoAnimation/>
+                <div className="flex items-baseline ml-auto">
+                    {navOptions.map((option, index) => (
+                        <a key={index} href={option.link || '#'} className="navLink transform hover:scale-110 hover:text-blue-500 mr-4 last:mr-0">
+                            {option.name}
+                        </a>
+                    ))}
+                </div>
             </div>
         </>
+
     );
 }
