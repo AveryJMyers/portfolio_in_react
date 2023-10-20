@@ -1,43 +1,8 @@
 
 /* LOGO ANIMATION */
-.logo {
-    overflow: hidden; 
-}
 
-.char {
-    display: block;
-    transition: transform .7s, transform 1s;
-}
 
-.a:hover {
-    transform: translateY(-100%);
-}
 
-.v:hover {
-    transform: translateY(-100%);
-}
-
-.e:hover {
-    transform: translateY(-100%);
-}
-
-.char.a::after {
-    content: "<";
-    display: block;
-    transform: translateY(100%);
-}
-
-.char.v::after {
-    content: "/";
-    display: block;
-    transform: translateY(100%);
-}
-
-.char.e::after {
-    content: ">";
-    display: block;
-    transform: translateY(100%);
-}
 
 
 /* CARD FLIP ANIMATION https://uiverse.io/joe-watson-sbf/little-goat-24 */
@@ -84,10 +49,10 @@
     font-size: 17px;
     position: absolute;
     top: 1.2em;
-    left: 12em;
+    left: 15.6em;
     display: inline-block;
     width: 1.75em;
-    height: 1em;
+    height: .8em;
   }
   
   /* Hide default HTML checkbox */
@@ -114,7 +79,7 @@
   .slider:before {
     position: absolute;
     content: "";
-    height: .7em;
+    height: .5em;
     width: 0.05em;
     border-radius: 0px;
     left: 0.15em;
@@ -144,3 +109,61 @@
     transition: opacity 1s, transform 1s;
     display: inline-block;
 }
+
+/* Initial styles for logo chars */
+.less-than, .slash, .greater-than {
+    display: inline-block;
+    opacity: 1; 
+    transition: transform 0.3s ease, opacity 0.3s ease; /* ease for smoother transitions */
+}
+
+.slash::before, .greater-than::before {
+    opacity: 0; /* initially hidden */
+    transition: opacity 0.3s ease; /* ease for smoother transitions */
+}
+
+/* Hover effects on the entire logo */
+.logo:hover .less-than {
+    transform: rotate(90deg); /* Rotate 90 degrees */
+    opacity: 0; /* fade out the element after rotating */
+}
+
+.logo:hover .slash {
+    opacity: 0; /* fade out the original / character */
+}
+
+.logo:hover .slash::before {
+    position: absolute;
+    opacity: 1; /* fade in the new V character */
+}
+
+.logo:hover .greater-than {
+    opacity: 0; /* fade out the original > character */
+}
+
+.logo:hover .greater-than::before {
+    position: absolute;
+    opacity: 1; /* fade in the new E character */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* AVE Styles - Initially hidden */
+.ave {
+    display: inline-block;
+    margin: 0, 2000px, 0, 0;
+    opacity: 0;
+    visibility: hidden; /* hide the AVE initially */
+}
+
+/* Show AVE upon hovering the logo, after a delay of 0.3s */
+.logo:hover .ave {
+    animation: fadeIn 0.1s ease forwards 0.1s; /* 0.3s delay before fading in */
+    visibility: visible;
+}
+
+
+/* Hide the default characters upon hover */
