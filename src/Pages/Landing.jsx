@@ -3,7 +3,7 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 
 export default function Landing() {
-    const words = ['CREATE', 'DESIGN', 'BUILD', 'LEARN', 'GROW'];
+    const words = ['CREATE', 'DESIGN', 'BUILD', 'LEARN', 'DEVELOP', 'INNOVATE', 'THRIVE'];
     const [currentWord, setCurrentWord] = useState(words[0]);
 
     useEffect(() => {
@@ -11,7 +11,7 @@ export default function Landing() {
         const interval = setInterval(() => {
             currentIdx = (currentIdx + 1) % words.length;
             setCurrentWord(words[currentIdx]);
-        }, 3000); 
+        }, 2000); 
 
         return () => clearInterval(interval);
     }, []);
