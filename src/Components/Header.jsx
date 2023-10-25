@@ -34,10 +34,9 @@ export default function Header() {
     ]
     return (
         <>
-            <div className='text-md flex items-baseline p-4'>
+            <div className='text-md flex items-center p-4'>
                 <ThemeToggler/>
-                <LogoAnimation/>
-                <div className="flex items-baseline ml-auto">
+                <div className="flex ml-auto">
                     {navOptions.map((option, index) => (
                         <a key={index} href={option.link || '#'} className="navLink transform hover:scale-110 hover:text-blue-500 mr-4 last:mr-0">
                             {option.name}

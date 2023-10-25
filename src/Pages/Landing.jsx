@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-
 
 export default function Landing() {
     const words = ['CREATE', 'DESIGN', 'BUILD', 'LEARN', 'DEVELOP', 'INNOVATE', 'THRIVE'];
@@ -11,7 +9,7 @@ export default function Landing() {
         const interval = setInterval(() => {
             currentIdx = (currentIdx + 1) % words.length;
             setCurrentWord(words[currentIdx]);
-        }, 2000); 
+        }, 1500); 
 
         return () => clearInterval(interval);
     }, []);
