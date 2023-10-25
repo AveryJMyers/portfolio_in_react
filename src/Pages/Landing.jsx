@@ -21,11 +21,11 @@ export default function Landing() {
                 <p className="text-4xl mt-2">Full Stack Web Developer</p>
                 <p className="text-3xl mt-4 font-semibold">Let's {currentWord} together</p>
             </div>
-            <div className="flip-card relative w-80 h-64 mr-12 ">
-                <div class="flip-card-inner">
-                    <div className="flip-card-back absolute rounded-sm w-full h-full transform translate-x-4 translate-y-4"></div>
-                    <img src="../photos/headshot.jpg" alt="Avery Myers" className="flip-card-front rounded-sm absolute w-full h-full object-cover"/>
+            <div className="headshotContainer flip-card relative w-80 h-64  mr-12">
+                <div className="photoBack absolute rounded-sm w-full h-full transform translate-x-4 translate-y-4">
+                    About Me
                 </div>
+                <img src="../photos/headshot.jpg" alt="Avery Myers" className="headshot rounded-sm absolute w-full h-full object-cover"/>
             </div>
         </div>
     );
