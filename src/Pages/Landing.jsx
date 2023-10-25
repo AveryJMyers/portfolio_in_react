@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import StyledButton from '../Components/StyledButton';
+
 
 export default function Landing() {
     const words = ['CREATE', 'DESIGN', 'BUILD', 'LEARN', 'DEVELOP', 'INNOVATE', 'THRIVE'];
@@ -22,10 +24,11 @@ export default function Landing() {
                 <p className="text-3xl mt-4 font-semibold">Let's {currentWord} together</p>
             </div>
             <div className="headshotContainer flip-card relative w-80 h-64  mr-12">
-                <div className="photoBack absolute rounded-sm w-full h-full transform translate-x-4 translate-y-4">
-                    About Me
+                <div className="photoBack absolute rounded-sm w-full h-full transform translate-x-4 translate-y-4"></div>
+                <div className="position relative w-80 h-64">
+                    <img src="../photos/headshot.jpg" alt="Avery Myers" className="headshot rounded-sm absolute w-full h-full object-cover" />
+                    <StyledButton className="z-30 position-absolute m-300  bg-white text-black">Word Life</StyledButton>
                 </div>
-                <img src="../photos/headshot.jpg" alt="Avery Myers" className="headshot rounded-sm absolute w-full h-full object-cover"/>
             </div>
         </div>
     );

@@ -6,10 +6,19 @@ export default {
   ],
   darkMode:'class', 
   theme: {
+      screens: {
+      'sm': '680px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+    },
     extend: {
       fontFamily: {
         'pangolin': ['Roboto Mono', 'monospace'],
       }, 
+      rotate: {
+        '270': '270deg',
+      },
       colors: {
         navy: '#192E41',
         blue: '#071330',
