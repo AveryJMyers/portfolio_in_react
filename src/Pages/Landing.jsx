@@ -33,13 +33,14 @@ export default function Landing() {
                 <div className="position relative w-80 h-64">
                     <img src="../photos/headshot.jpg" alt="Avery Myers" className="headshot rounded-sm absolute w-full h-full object-cover" />
                     <div className="button-container absolute rounded-sm">
-                        <StyledButton className="button text-black" onClick={toggleModal}>About Me</StyledButton>
+                        <StyledButton className="button dark" onClick={toggleModal}>About Me</StyledButton>
                     </div>
                 </div>
             </div>
             {modalOpen && (
-                <section className="modal rounded-sm">
-
+                <section className="modal active position absolute rounded-sm">
+                    <button className="" onClick={toggleModal}>X</button>
+                    <h1 className=" text-6xl text-align flex justify-center items-center">About Me</h1>
                 </section>
             )}
 

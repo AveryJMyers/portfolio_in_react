@@ -5,7 +5,7 @@ export default function StyledButton({
   onClick,
   disabled,
   children,
-  standard,
+  dark,
   flipped
 }) {
   // Initialize the buttonStyle with the default CSS classes

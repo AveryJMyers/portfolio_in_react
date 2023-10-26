@@ -142,9 +142,12 @@ input:checked + .slider:before {
   transform: translateY(-79%); 
 }
 
+/* 
+
+STARTING POSITION TO MATCH BUTTON
 .modal{
   position: absolute;
-  background-color: white;
+  background-color: transparent;
   width: 78px;
   height: 80px;
   border: rgb(0, 255, 30) solid 1px;
@@ -154,6 +157,27 @@ input:checked + .slider:before {
   rotate: 270deg;
 }
 
+
+.modal.active {
+  opacity: 1; /* When the "active" class is added, set opacity to 1 to make it visible */
+/* } 
+*/
+
+.modal{
+  background-color: var(--background-color);
+  left: 14%;
+  width:40%;
+  height: 60%;
+  border: rgb(0, 255, 30) solid 1px;
+  z-index: 1;
+  color: var(--text-color);
+}
+
+.modalButton{
+  background-color: rgb(8, 195, 195);
+  border: rgb(0, 255, 30) solid 1px;
+  z-index: 2;
+}
 
 
 
