@@ -5,6 +5,11 @@ import StyledButton from '../Components/StyledButton';
 export default function Landing() {
     const words = ['CREATE', 'DESIGN', 'BUILD', 'LEARN', 'DEVELOP', 'INNOVATE', 'THRIVE'];
     const [currentWord, setCurrentWord] = useState(words[0]);
+   const [modalOpen, setModalOpen] = useState(false);
+
+    const toggleModal = () => {
+        setModalOpen(!modalOpen);
+    }
 
     useEffect(() => {
         let currentIdx = 0; // start with the first word
@@ -23,13 +28,21 @@ export default function Landing() {
                 <p className="text-4xl mt-2">Full Stack Web Developer</p>
                 <p className="text-3xl mt-4 font-semibold">Let's {currentWord} together</p>
             </div>
-            <div className="headshotContainer flip-card relative w-80 h-64  mr-12">
+            <div className="headshotContainer relative w-80 h-64 mr-12">
                 <div className="photoBack absolute rounded-sm w-full h-full transform translate-x-4 translate-y-4"></div>
                 <div className="position relative w-80 h-64">
                     <img src="../photos/headshot.jpg" alt="Avery Myers" className="headshot rounded-sm absolute w-full h-full object-cover" />
-                    <StyledButton className="z-30 position-absolute m-300  bg-white text-black">Word Life</StyledButton>
+                    <div className="button-container absolute rounded-sm">
+                        <StyledButton className="button text-black" onClick={toggleModal}>About Me</StyledButton>
+                    </div>
                 </div>
             </div>
+            {modalOpen && (
+                <section className="modal rounded-sm">
+
+                </section>
+            )}
+
         </div>
     );
 }

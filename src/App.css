@@ -118,3 +118,43 @@ input:checked + .slider:before {
 
 
 /* Hide the default characters upon hover */
+
+
+/* more trying with button */
+
+.headshot{
+  z-index: 1;
+}
+
+.button-container{
+  rotate: 270deg;
+  right: 82%;
+  top: 8%;
+  transition: transform 0.3s ease;
+  background-color: var(--text-color);
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  border: rgb(0, 255, 30) solid 1px;
+
+}
+
+.button-container:hover{
+  transform: translateY(-79%); 
+}
+
+.modal{
+  position: absolute;
+  background-color: white;
+  width: 78px;
+  height: 80px;
+  border: rgb(0, 255, 30) solid 1px;
+  right: 42%;
+  top: 32.2%;
+  z-index: -1;
+  rotate: 270deg;
+}
+
+
+
+
+
