@@ -56,7 +56,8 @@
 } */
 
 .photoBack {
-  background-color: var(--text-color);
+  background-color: var(--accent-color);
+  /* background-color: #3C6E71; */
   z-index: 0; /* You can set this to 0, so it stays below the .headshot by default */  
 }
 
@@ -66,11 +67,14 @@
 /* Theme Toggler CSS https://uiverse.io/Praashoo7/angry-starfish-78  */
 
 /* The switch - the box around the slider */
+
+/* I NEED TO REWORK THE SWITCH HERE */
 .switch {
   font-size: 17px;
   position: absolute;
   width: 1.75em;
   height: .8em;
+  top: -5px; 
 }
 
 /* Hide default HTML checkbox */
@@ -128,18 +132,18 @@ input:checked + .slider:before {
 
 .button-container{
   rotate: 270deg;
-  right: 82%;
+  right: 85%;
   top: 8%;
   transition: transform 0.3s ease;
-  background-color: var(--text-color);
+  background-color: var(--accent-color);
   position: absolute;
   transition: all 0.3s ease-in-out;
-  border: rgb(0, 255, 30) solid 1px;
+  color: #D9D9D9
 
 }
 
 .button-container:hover{
-  transform: translateY(-79%); 
+  transform: translateY(-60%); 
 }
 
 /* 
@@ -164,13 +168,13 @@ STARTING POSITION TO MATCH BUTTON
 */
 
 .modal{
-  background-color: var(--background-color);
-  left: 14%;
+  background-color: var(--text-color);
+  right: 30%;
   width:40%;
   height: 60%;
-  border: rgb(0, 255, 30) solid 1px;
+  border: black solid 2px;
   z-index: 1;
-  color: var(--text-color);
+  color: var(--background-color);
 }
 
 .modalButton{
@@ -182,3 +186,10 @@ STARTING POSITION TO MATCH BUTTON
 
 
 
+.landingName{
+  color: var(--accent-font);
+}
+
+.wordChange{
+  color: var(--accent-font);
+}

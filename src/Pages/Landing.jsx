@@ -16,17 +16,18 @@ export default function Landing() {
         const interval = setInterval(() => {
             currentIdx = (currentIdx + 1) % words.length;
             setCurrentWord(words[currentIdx]);
-        }, 1500); 
+        }, 1700); 
 
         return () => clearInterval(interval);
     }, []);
 
     return (
-        <div className="flip-card flex h-[80vh] justify-between items-center">
+        <div className="flip-card flex custom-height 
+        pb-32 justify-between items-center">
             <div>
-                <h1 className="text-6xl font-bold">Avery Myers</h1>
-                <p className="text-4xl mt-2">Full Stack Web Developer</p>
-                <p className="text-3xl mt-4 font-semibold">Let's {currentWord} together</p>
+                <h1 className="text-6xl landingName font-bold">Avery Myers</h1>
+                <p className="text-4xl mt-4">Full Stack Web Developer</p>
+                <p className="text-3xl mt-4 font-semibold">Let's <span className="wordChange">{currentWord}</span> together</p>
             </div>
             <div className="headshotContainer relative w-80 h-64 mr-12">
                 <div className="photoBack absolute rounded-sm w-full h-full transform translate-x-4 translate-y-4"></div>
@@ -38,9 +39,12 @@ export default function Landing() {
                 </div>
             </div>
             {modalOpen && (
-                <section className="modal active position absolute rounded-sm">
-                    <button className="" onClick={toggleModal}>X</button>
-                    <h1 className=" text-6xl text-align flex justify-center items-center">About Me</h1>
+                <section className="modal active shadow-lg position-relative absolute rounded-sm">
+                    <button className="absolute top-4 right-4" onClick={toggleModal}>X</button>
+                    <h1 className="  text-6xl mt-4 text-align flex justify-center items-center">About Me</h1>
+                    <p className=" mx-12 mt-4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo asperiores odio aliquid quia, dolores ut cumque. Minima maiores quisquam sapiente tenetur, ratione voluptates porro amet nisi quasi laboriosam qui quibusdam repellendus illum facere magni ab veniam minus obcaecati sed necessitatibus perferendis cumque debitis? Minima ducimus officia fuga aliquam fugit consectetur, quia modi itaque perferendis, possimus dolorum dignissimos, cum totam explicabo! Error veritatis quidem, sunt inventore id illum voluptatibus, aut animi rerum quibusdam, aperiam doloribus? Ipsam saepe impedit laudantium recusandae.
+                    </p>
                 </section>
             )}
 

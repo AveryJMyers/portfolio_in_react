@@ -9,7 +9,7 @@ export default function StyledButton({
   flipped
 }) {
   // Initialize the buttonStyle with the default CSS classes
-  let buttonStyle = " text-white font-bold py-2 px-4 rounded-sm";
+  let buttonStyle = "font-bold py-2 px-4 rounded-sm";
 
   // Update the buttonStyle if 'flipped' prop is true
   if (flipped) {

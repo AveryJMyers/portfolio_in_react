@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 
 // pages
 import Landing from './Pages/Landing'
+import Projects from './Pages/Projects';
 
 // componets
 import Header from './Components/header'
@@ -15,6 +16,7 @@ return <>
   <div>
     <Header/>
     <Landing/>
+    <Projects/>
   </div>
 </>
 }
