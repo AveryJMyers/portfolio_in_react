@@ -46,8 +46,8 @@ export default function Landing() {
                     <div className="photoBack absolute rounded-sm w-full h-full transform translate-x-4 translate-y-4"></div>
                     <div className="position relative w-80 h-64">
                         <img src="../photos/headshot.jpg" alt="Avery Myers" className="headshot rounded-sm absolute w-full h-full object-cover" />
-                        <div className="button-container absolute rounded-sm">
-                            <StyledButton className="button dark" onClick={handleAboutMe}>About Me</StyledButton>
+                        <div className="button-container ease-in-out duration-300 transition-transform absolute rounded-sm">
+                            <StyledButton className="button  dark" onClick={handleAboutMe}>About Me</StyledButton>
                         </div>
                     </div>
                 </div>

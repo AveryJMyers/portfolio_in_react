@@ -81,10 +81,8 @@ input:checked + .slider:before {
   rotate: 270deg;
   right: 85%;
   top: 8%;
-  transition: transform 0.3s ease;
   background-color: var(--accent-color);
   position: absolute;
-  transition: all 0.3s ease-in-out;
   color: #D9D9D9;
   border: var(--accent-font) solid 2px;
 
