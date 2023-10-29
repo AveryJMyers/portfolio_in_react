@@ -59,7 +59,7 @@ export default function Projects(){
       <section className="projectSection py-20">
         <div className=" cardContainer grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-10">
           {projects.map((project, index) => (
-            <div key={index} className="border projectCards p-4">
+            <div key={index} className="border boxShadow scaleHover projectCards p-4">
               <div>
                 <h2 className=" text-3xl font-bold ">{project.name} </h2>
                 <h3 className=" text-1x1 border-b mb-4 pb-4">({project.type})</h3>

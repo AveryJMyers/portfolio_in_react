@@ -8,6 +8,13 @@
     }
   }
 
+  @layer components {
+    .scaleHover {
+      @apply transform transition-all ease-in-out duration-300 hover:scale-110;
+    }
+
+  }
+
 /* https://coolors.co/palette/353535-3c6e71-ffffff-d9d9d9-284b63 */
 
 /* :root{
@@ -55,4 +62,20 @@ body {
 
 .landingSection, .header {
   margin: 0 17% 0 17%;
+}
+
+.textShadow{
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.textShadow:hover{
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.45);
+}
+
+.boxShadow{
+  box-shadow:0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.boxShadow:hover{
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.45);
 }
