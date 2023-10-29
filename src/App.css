@@ -41,25 +41,9 @@
 }
 
 
-
-/* .headshotContainer:hover .headshot {
-  z-index: 0;
-  animation: slideUp 1s forwards;
-}
-.headshotContainer:hover .photoBack {
-  z-index: 0;
-  animation: slideDown 1s forwards;
-}
-
-.headshot {
-  z-index: 1;
-  transition: transform 0.5s
-} */
-
 .photoBack {
   background-color: var(--accent-color);
-  /* background-color: #3C6E71; */
-  z-index: 0; /* You can set this to 0, so it stays below the .headshot by default */  
+  /* background-color: #3C6E71; */ 
 }
 
 
