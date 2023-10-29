@@ -22,14 +22,14 @@ export default function Landing() {
     }, []);
 
     return (
-        <div className="flip-card flex custom-height 
+        <div className=" landingSection flex custom-height 
         pb-32 justify-between items-center">
             <div>
                 <h1 className="text-6xl landingName font-bold">Avery Myers</h1>
                 <p className="text-4xl mt-4">Full Stack Web Developer</p>
                 <p className="text-3xl mt-4 font-semibold">Let's <span className="wordChange">{currentWord}</span> together</p>
             </div>
-            <div className="headshotContainer relative w-80 h-64 mr-12">
+            <div className="headshotContainer  relative w-80 h-64 mr-12">
                 <div className="photoBack absolute rounded-sm w-full h-full transform translate-x-4 translate-y-4"></div>
                 <div className="position relative w-80 h-64">
                     <img src="../photos/headshot.jpg" alt="Avery Myers" className="headshot rounded-sm absolute w-full h-full object-cover" />

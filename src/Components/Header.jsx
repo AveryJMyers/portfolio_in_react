@@ -34,7 +34,7 @@ export default function Header() {
     ]
     return (
         <>
-        <div className='text-md flex items-center p-4'>
+        <div className='header text-md flex items-center p-4'>
             <div className='inline-flex items-center'>
                 <img src="../photos/linkedIn.png" alt="Avery Myers" className="logo h-5 w-5 mr-4" />
                 <img src="../photos/git.png" alt="Avery Myers" className="logo h-5 w-5 mr-4" />
