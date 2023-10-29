@@ -31,13 +31,14 @@ export default function Landing() {
     return (
         <div className=" landingSection grid gird-cols-1 custom-height pb-32 lg:grid-cols-2 items-center justify-between ">
             <div>
-                <h1 className="text-6xl landingName font-bold">Avery Myers</h1>
+                <h1 className="text-6xl transform-all hover:scale-110  ease-in-out duration-300 landingName font-bold">Avery Myers</h1>
             {aboutMe ? (
-                <p className="text-2xl w-2 mt-4"></p>
+                <p className="text-2xl w-2 mt-4
+                "></p>
             ) : (
             <div>
-                <p className="text-4xl mt-4">Full Stack Web Developer</p>
-                <p className="text-3xl mt-4 font-semibold">Let's <span className="wordChange">{currentWord}</span> together</p>
+                <p className=" tagLines text-4xl mt-4 transform-all hover:scale-110  ease-in-out duration-300">Full Stack Web Developer</p>
+                <p className=" tagLines text-3xl mt-4 font-semibold transform-all hover:scale-110  ease-in-out duration-300">Let's <span className="wordChange transform-all hover:scale-25  ease-in-out duration-300 ">{currentWord}</span> together</p>
             </div>
             )}
             </div>

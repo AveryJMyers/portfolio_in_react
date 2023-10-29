@@ -44,7 +44,7 @@ export default function Header() {
             </div>
             <div className="flex ml-auto">
                 {navOptions.map((option, index) => (
-                    <a key={index} href={option.link || '#'} className="navLink transform hover:scale-110 hover:text-blue-500 mr-4 last:mr-0">
+                    <a key={index} href={option.link || '#'} className="navLink transform-all hover:scale-110 ease-in-out duration-300 mr-4 last:mr-0">
                         {option.name}
                     </a>
                 ))}

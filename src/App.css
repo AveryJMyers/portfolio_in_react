@@ -4,6 +4,8 @@
   /* background-color: #3C6E71; */ 
 }
 
+/* nav */
+
 
 
 
@@ -136,6 +138,9 @@ STARTING POSITION TO MATCH BUTTON
   color: var(--accent-font);
 }
 
+.landingName:hover, .tagLines:hover  {
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
 
 .wordChange{
   color: var(--accent-font);
