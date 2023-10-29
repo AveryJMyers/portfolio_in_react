@@ -5,7 +5,13 @@ import StyledButton from '../Components/StyledButton';
 export default function Landing() {
     const words = ['CREATE', 'DESIGN', 'BUILD', 'LEARN', 'DEVELOP', 'INNOVATE', 'THRIVE'];
     const [currentWord, setCurrentWord] = useState(words[0]);
-   const [modalOpen, setModalOpen] = useState(false);
+    const [modalOpen, setModalOpen] = useState(false);
+    const [aboutMe, setAboutMe] = useState(false);
+
+    const handleAboutMe = () => {
+        setAboutMe(!aboutMe);
+    }
+
 
     const toggleModal = () => {
         setModalOpen(!modalOpen);
@@ -21,20 +27,28 @@ export default function Landing() {
         return () => clearInterval(interval);
     }, []);
 
+    //  landingSection flex custom-height  pb-32 justify-between items-center
     return (
-        <div className=" landingSection flex custom-height 
-        pb-32 justify-between items-center">
+        <div className=" landingSection grid gird-cols-1 custom-height pb-32 lg:grid-cols-2 items-center justify-between ">
             <div>
                 <h1 className="text-6xl landingName font-bold">Avery Myers</h1>
+            {aboutMe ? (
+                <p className="text-2xl w-2 mt-4"></p>
+            ) : (
+            <div>
                 <p className="text-4xl mt-4">Full Stack Web Developer</p>
                 <p className="text-3xl mt-4 font-semibold">Let's <span className="wordChange">{currentWord}</span> together</p>
             </div>
-            <div className="headshotContainer  relative w-80 h-64 mr-12">
-                <div className="photoBack absolute rounded-sm w-full h-full transform translate-x-4 translate-y-4"></div>
-                <div className="position relative w-80 h-64">
-                    <img src="../photos/headshot.jpg" alt="Avery Myers" className="headshot rounded-sm absolute w-full h-full object-cover" />
-                    <div className="button-container absolute rounded-sm">
-                        <StyledButton className="button dark" onClick={toggleModal}>About Me</StyledButton>
+            )}
+            </div>
+            <div className="justify-end flex headshotContainer">
+                <div className="float-right relative w-80 h-64 mr-12 ">
+                    <div className="photoBack absolute rounded-sm w-full h-full transform translate-x-4 translate-y-4"></div>
+                    <div className="position relative w-80 h-64">
+                        <img src="../photos/headshot.jpg" alt="Avery Myers" className="headshot rounded-sm absolute w-full h-full object-cover" />
+                        <div className="button-container absolute rounded-sm">
+                            <StyledButton className="button dark" onClick={handleAboutMe}>About Me</StyledButton>
+                        </div>
                     </div>
                 </div>
             </div>

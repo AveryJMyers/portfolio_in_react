@@ -1,46 +1,4 @@
 
-/* LOGO ANIMATION */
-
-
-
-
-
-/* CARD FLIP ANIMATION https://uiverse.io/joe-watson-sbf/little-goat-24 */
-
-
-
-@keyframes slideUp {
-  0% {
-    transform: translateY(0);
-    z-index: 1;
-  }
-  50% {
-    transform: translateY(-150px); /* adjust this value as per your needs */
-    z-index: 0;
-  }
-  100% {
-    transform: translateY(0);
-    z-index: 0;
-  }
-}
-
-@keyframes slideDown {
-  0% {
-    transform: translateX(1rem) translateY(1rem); /* Added default translateX */
-    z-index: 1;
-  }
-  50% {
-    transform: translateX(1rem) translateY(150px); /* Add default translateX and adjusted translateY */
-    z-index: 0;
-  }
-
-  100% {
-    transform: translateX(1rem) translateY(1rem); /* Revert back to default transforms */
-    z-index: 2;
-  }
-}
-
-
 .photoBack {
   background-color: var(--accent-color);
   /* background-color: #3C6E71; */ 
@@ -174,11 +132,12 @@ STARTING POSITION TO MATCH BUTTON
 }
 
 
-
+/* Landing Animation */
 
 .landingName{
   color: var(--accent-font);
 }
+
 
 .wordChange{
   color: var(--accent-font);
