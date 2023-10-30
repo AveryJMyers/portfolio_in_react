@@ -31,7 +31,7 @@
     --accent-color: #3C6E71;
     --accent-font: #FFFFFF;
 } */
-
+/* https://coolors.co/b79685-e3ecf4-bed4ef-738ca5-7f554c */
 /* https://coolors.co/b79685-e3ecf4-bed4ef-738ca5-7f554c */
 :root{
   --background-color: #bed4ef;
@@ -40,15 +40,19 @@
   --accent-color: #bed4ef;
   --text-color: grey;
   --accent-font: black;
+  --background-shadow:rgba(0, 0, 0, 0.3);;
+  --hovered-shadow:rgba(0, 0, 0, 0.45);
   font-family: 'Roboto Mono', monospace;
 
 }
 
 .dark:root{
-  --background-color: #284B63;
-  --text-color: #D9D9D9;
-  --accent-color: #3C6E71;
-  --accent-font: #FFFFFF;
+  --background-color: #1B1B1E;
+  --text-color: #A9BCD0;
+  --accent-color: #373F51;
+  --accent-font: #D8DBE2;
+  --background-shadow:rgba(147, 144, 144, 0.3);
+  --hovered-shadow:rgba(147, 144, 144, 0.45);
 } 
 
 
@@ -65,17 +69,17 @@ body {
 }
 
 .textShadow{
-  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  text-shadow: 0 4px 6px var(--background-shadow)
 }
 
 .textShadow:hover{
-  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.45);
+  text-shadow: 0 5px 10px var(--hovered-shadow);
 }
 
 .boxShadow{
-  box-shadow:0 4px 6px rgba(0, 0, 0, 0.3);
+  box-shadow:0 4px 6px var(--background-shadow);
 }
 
 .boxShadow:hover{
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 5px 10px var(--hovered-shadow);
 }

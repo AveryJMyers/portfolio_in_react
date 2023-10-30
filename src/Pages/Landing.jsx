@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import StyledButton from '../Components/StyledButton';
+import Cloud from '../Components/Cloud';
 
 
 export default function Landing() {
@@ -30,8 +31,9 @@ export default function Landing() {
 
     //  landingSection flex custom-height  pb-32 justify-between items-center
     return (
+    <section>
         
-        <div className=  "landingSection grid gird-cols-1 custom-height pb-32 lg:grid-cols-2 items-center justify-between ">
+        <div className="landingSection grid gird-cols-1 custom-height pb-32 lg:grid-cols-2 items-center justify-between ">
             {aboutMe ? (
             <div>
                     <h1 className=" textShadow text-6xl scaleHover landingName font-bold border-b-4 border-black mb-4">About</h1>
@@ -40,7 +42,7 @@ export default function Landing() {
                     </p>
                 </div>
             ) : (
-<           div>
+            <div>
                 <h1 className=" textShadow text-6xl scaleHover landingName font-bold">Avery Myers</h1>
                 <p className=" textShadow tagLines text-4xl mt-4 scaleHover">Full Stack Web Developer</p>
                 <p className=" textShadow tagLines text-3xl mt-4 font-semibold scaleHover">Let's <span className="wordChange ">{currentWord}</span> together</p>
@@ -58,6 +60,7 @@ export default function Landing() {
                 </div>
             </div>
         </div>
+    </section>
     );
 }
 

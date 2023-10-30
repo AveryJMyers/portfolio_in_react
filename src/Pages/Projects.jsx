@@ -9,7 +9,8 @@ export default function Projects(){
         {
           name: 'Wedloc',
           description: 'Wedloc is a photo/video sharing app for wedding guests. Guests can upload photos/videos, add comments, like, and even livechat.',
-          techsUsed: ['React.js ', 'Node.js ', 'MongoDB ', 'GraphQL ', 'Cloudinary ', 'Socket.io ', 'TailwindCSS ', '+ more '],
+          techsUsed: ['React.js', 'Node.js', 'MongoDB', 'GraphQL', 'Cloudinary', 'Socket.io', 'TailwindCSS', '+ more'],
+          techUsed: [ 'nodeIcon.png', 'graphqlIcon.png', 'cloudinaryIcon.png', 'tailwindIcon.png'],
           type: 'Full Stack',
           img: 'wedloc.jpg'
         },
@@ -25,7 +26,7 @@ export default function Projects(){
           description: 'Loot Vault is a site for gamers to find the best deals on their favorite games. Users can search for games and see the best deals from multiple sites.',
           techsUsed: ['html ', 'css ', 'javascript ', 'Bulma CSS ', 'APIs '],
           type: 'Front End',
-          img: 'photo'
+          img: 'lootVault.png'
         },
         {
           name: 'Tech Blog',
@@ -36,7 +37,7 @@ export default function Projects(){
         {
           name: 'Employee Directory',
           description: 'A command line application to manage a company\'s employee database, using Node.js, Inquirer, and MySQL.',
-          techsUsed: ['Node.js ', 'MySQL ', 'Inquirer '],
+          techsUsed: ['Node.js ', 'MySQL ', ],
           type: 'Back End',
           img: 'photo'
         },
@@ -49,7 +50,8 @@ export default function Projects(){
         {
           name: 'Javascript Quiz',
           description: 'A timed quiz that tests the users knowledge of javascript and tracks their high scores.',
-          techsUsed: ['html ', 'css ', 'javascript '],
+          techsUsed: ['html', 'css ', 'javascript '],
+          techUsed: ['htmlIcon.png', 'cssIcon.png', 'javascriptIcon.png'],
           type: 'Front End',
         }
 
@@ -59,13 +61,14 @@ export default function Projects(){
       <section className="projectSection py-20">
         <div className=" cardContainer grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-10">
           {projects.map((project, index) => (
-            <div key={index} className="border boxShadow scaleHover projectCards p-4">
+            <div key={index} className="border boxShadow textShadow scaleHover projectCards p-4">
               <div>
                 <h2 className=" text-3xl font-bold ">{project.name} </h2>
-                <h3 className=" text-1x1 border-b mb-4 pb-4">({project.type})</h3>
-                <p className="border-b my-4 py-4">{project.description}</p>
-                <img className="w-full h-auto border-b my-4 py-4" src={`../photos/${project.img}`} alt={project.name} />
-                <p className="my-4 py-4">Techs Used: {project.techsUsed}</p>
+                <h3 className=" text-1x1  border-b mb-4 pb-4">({project.type})</h3>
+                <p className="border-b textShadow my-4 py-4">{project.description}</p>
+                <img className="w-full scaleHover h-auto border-b my-8 " src={`../photos/${project.img}`} alt={project.name} />
+                <h4 className=" text-2xl font-bold">Tech Used:</h4>
+                <p className="my-4 py-4">{project.techsUsed.join(', ')}</p>
               </div>
             </div>
           ))}
