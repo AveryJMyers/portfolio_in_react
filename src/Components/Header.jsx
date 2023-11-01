@@ -36,15 +36,15 @@ export default function Header() {
         <>
         <div className='header text-md flex items-center p-4'>
             <div className='inline-flex items-center'>
-                <img src="../photos/linkedIn.png" alt="Avery Myers" className="logo h-5 w-5 mr-4" />
-                <img src="../photos/git.png" alt="Avery Myers" className="logo h-5 w-5 mr-4" />
+                <img src="../photos/linkedIn.png" alt="Avery Myers" className="scaleHover logo h-5 w-5 mr-4" />
+                <img src="../photos/git.png" alt="Avery Myers" className="scaleHover logo h-5 w-5 mr-4" />
                 <div className="relative inline-block items-center">
-                    <ThemeToggler className="absolute left-0"/>
+                    <ThemeToggler className="absolute scaleHover left-0"/>
                 </div>
             </div>
             <div className="flex ml-auto">
                 {navOptions.map((option, index) => (
-                    <a key={index} href={option.link || '#'} className="navLink transform hover:scale-110 hover:text-blue-500 mr-4 last:mr-0">
+                    <a key={index} href={option.link || '#'} className=" navLink scaleHover mr-4 last:mr-0">
                         {option.name}
                     </a>
                 ))}

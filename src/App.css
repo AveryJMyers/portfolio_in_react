@@ -1,66 +1,12 @@
 
-/* LOGO ANIMATION */
-
-
-
-
-
-/* CARD FLIP ANIMATION https://uiverse.io/joe-watson-sbf/little-goat-24 */
-
-
-
-@keyframes slideUp {
-  0% {
-    transform: translateY(0);
-    z-index: 1;
-  }
-  50% {
-    transform: translateY(-150px); /* adjust this value as per your needs */
-    z-index: 0;
-  }
-  100% {
-    transform: translateY(0);
-    z-index: 0;
-  }
-}
-
-@keyframes slideDown {
-  0% {
-    transform: translateX(1rem) translateY(1rem); /* Added default translateX */
-    z-index: 1;
-  }
-  50% {
-    transform: translateX(1rem) translateY(150px); /* Add default translateX and adjusted translateY */
-    z-index: 0;
-  }
-
-  100% {
-    transform: translateX(1rem) translateY(1rem); /* Revert back to default transforms */
-    z-index: 2;
-  }
-}
-
-
-
-/* .headshotContainer:hover .headshot {
-  z-index: 0;
-  animation: slideUp 1s forwards;
-}
-.headshotContainer:hover .photoBack {
-  z-index: 0;
-  animation: slideDown 1s forwards;
-}
-
-.headshot {
-  z-index: 1;
-  transition: transform 0.5s
-} */
-
 .photoBack {
   background-color: var(--accent-color);
-  /* background-color: #3C6E71; */
-  z-index: 0; /* You can set this to 0, so it stays below the .headshot by default */  
+
 }
+
+
+
+/* nav */
 
 
 
@@ -129,73 +75,45 @@ input:checked + .slider:before {
 
 .headshot{
   z-index: 1;
-  border: var(--accent-font) solid 2px;
+
 }
-.photoBack{
-  border: var(--accent-font) solid 2px;
-}
+
 
 .button-container{
   rotate: 270deg;
   right: 85%;
   top: 8%;
-  transition: transform 0.3s ease;
   background-color: var(--accent-color);
   position: absolute;
-  transition: all 0.3s ease-in-out;
-  color: #D9D9D9;
-  border: var(--accent-font) solid 2px;
-
+  color: var(--text-color);
 }
 
 .button-container:hover{
   transform: translateY(-60%); 
 }
 
-/* 
-
-STARTING POSITION TO MATCH BUTTON
-.modal{
-  position: absolute;
-  background-color: transparent;
-  width: 78px;
-  height: 80px;
-  border: rgb(0, 255, 30) solid 1px;
-  right: 42%;
-  top: 32.2%;
-  z-index: -1;
-  rotate: 270deg;
-}
-
-
-.modal.active {
-  opacity: 1; /* When the "active" class is added, set opacity to 1 to make it visible */
-/* } 
-*/
-
-.modal{
-  background-color: var(--text-color);
-  right: 30%;
-  width:40%;
-  height: 60%;
-  border: black solid 2px;
-  z-index: 1;
-  color: var(--background-color);
-}
-
-.modalButton{
-  background-color: rgb(8, 195, 195);
-  border: rgb(0, 255, 30) solid 1px;
-  z-index: 2;
-}
 
 
 
+
+/* Landing Animation */
 
 .landingName{
   color: var(--accent-font);
 }
+/* 
+.tagLines, .landingName{
+  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+} */
 
+.landingName:hover, .tagLines:hover  {
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.45);
+}
+
+/* .headshot:hover{
+  box-shadow:0 4px 6px rgba(0, 0, 0, 0.3);
+  
+} */
 .wordChange{
   color: var(--accent-font);
 }
@@ -219,3 +137,35 @@ STARTING POSITION TO MATCH BUTTON
 .cardContainer{
   margin: 0 17% 0 17%;
 }
+
+
+
+/* CLOUD Animation  */
+
+
+.center {
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.githubBotton{
+  background-color: aqua;
+}
+
+.styledButton{
+
+  /* box-shadow:0 4px 6px var(--background-shadow); */
+  transition: smooth 0.3s ease-in-out;
+}
+/* 
+.styledButton:hover{
+  box-shadow: 0 5px 10px var(--hovered-shadow);
+  
+
+} */
+
+/* .projectPhoto{
+  border: black 1px solid;
+} */
