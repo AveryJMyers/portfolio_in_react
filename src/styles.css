@@ -12,6 +12,9 @@
     .scaleHover {
       @apply transform transition-all ease-in-out duration-300 hover:scale-110;
     }
+    .scaleBigHover {
+      @apply transform transition-all ease-in-out duration-300 hover:scale-125;
+    }
     .projectHover {
       @apply transform transition-all ease-in-out duration-300 hover:scale-105;
     }
@@ -99,4 +102,8 @@ body {
 
 .hoverShadow:hover{
   box-shadow: 0 5px 10px var(--hovered-shadow);
+}
+
+.hoverTextShadow:hover{
+  text-shadow: 0 5px 10px var(--hovered-shadow);
 }
