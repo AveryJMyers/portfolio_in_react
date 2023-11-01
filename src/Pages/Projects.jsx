@@ -25,7 +25,7 @@ export default function Projects(){
         {
           name: 'Loot Vault',
           description: 'Loot Vault is a site for gamers to find the best deals on their favorite games. Users can search for games and see the best deals from multiple sites.',
-          techsUsed: ['html', 'css', 'javascript', 'Bulma CSS', 'APIs '],
+          techsUsed: ['HTML', 'CSS', 'Javascript', 'Bulma CSS', 'APIs '],
           type: 'Front End',
           img: 'lootVault.png'
         },
@@ -45,13 +45,13 @@ export default function Projects(){
         {
           name: 'Weather Dashboard',
           description: 'A weather dashboard that allows users to search for a city and see the current weather and 5 day forecast.',
-          techsUsed: ['html ', 'css ', 'javascript ', 'APIs '],
+          techsUsed: ['HTML ', 'CSS', 'JavaScript', 'APIs '],
           type: 'Front End', 
         },
         {
           name: 'Javascript Quiz',
           description: 'A timed quiz that tests the users knowledge of javascript and tracks their high scores.',
-          techsUsed: ['html', 'css ', 'javascript '],
+          techsUsed: ['HTML', 'CSS', 'Javascript'],
           techUsed: ['htmlIcon.png', 'cssIcon.png', 'javascriptIcon.png'],
           type: 'Front End',
         }
@@ -71,17 +71,17 @@ export default function Projects(){
                     <CardButton>Deployed Site</CardButton>
                   </div>
                 </div>
-                <h3 className=" text-1x1  border-b mb-4 pb-4 ">({project.type})</h3>
-                <p className="border-b my-4 py-4 h-36 ">{project.description}</p>
+                <h3 className=" text-1x1  border-b mb-4 pb-1 ">({project.type})</h3>
+                <p className="border-b my-4 py-1 h-36 ">{project.description}</p>
                 <div className="h-62">
-                  <img className="w-full boxShadow projectPhoto rounded projectHover my-8 h-64 " src={`../photos/${project.img}`} alt={project.name} />
+                  <img className="w-full boxShadow projectPhoto rounded projectHover py-1 my-8 h-64 " src={`../photos/${project.img}`} alt={project.name} />
                 </div>
                 <div className="h-36">
-                  <h4 className=" text-2xl pt-4 font-bold">Tech Used:</h4>
+                  <h4 className=" text-2xl py-1 font-bold">Tech Used:</h4>
                   {/* <p className="my-4 py-2">{project.techsUsed.join(', ')}</p> */}
-                  <p className="my-4 flex flex-wrap justify-start">
+                  <p className="grid grid-cols-2 w-80 ">
                     {project.techsUsed.map((tech, index) => (
-                      <span key={index} className=" hoverShadow rounded w-32 m-0.5 text-center">
+                      <span key={index} className=" scaleHover rounded m-0.5 ">
                         {tech}
                       </span>
                     ))}

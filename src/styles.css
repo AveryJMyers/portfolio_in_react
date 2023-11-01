@@ -100,3 +100,7 @@ body {
 .hoverShadow:hover{
   box-shadow: 0 5px 10px var(--hovered-shadow);
 }
+
+.hoverTextShadow:hover{
+  text-shadow: 0 5px 10px var(--hovered-shadow);
+}
