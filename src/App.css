@@ -150,4 +150,22 @@ input:checked + .slider:before {
   transform: translate(-50%,-50%);
 }
 
+.githubBotton{
+  background-color: aqua;
+}
 
+.styledButton{
+
+  /* box-shadow:0 4px 6px var(--background-shadow); */
+  transition: smooth 0.3s ease-in-out;
+}
+/* 
+.styledButton:hover{
+  box-shadow: 0 5px 10px var(--hovered-shadow);
+  
+
+} */
+
+/* .projectPhoto{
+  border: black 1px solid;
+} */

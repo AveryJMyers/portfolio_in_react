@@ -2,6 +2,7 @@
 import '../styles.css'
 import '../App.css'
 import React from 'react';
+import CardButton from '../Components/StyledButton';
 
 export default function Projects(){
 
@@ -17,27 +18,27 @@ export default function Projects(){
         {
           name: 'Task Titan',
           description: 'Task Titan is a three level task management app. Project admins can add users and assign task. Workers may view taks and comment on them. Clients may see the progress of their projects.',
-          techsUsed: ['Node.js ', 'Express.js ', 'MySQL ', 'Handlebars.js '],
+          techsUsed: ['Node.js', 'Express.js', 'MySQL', 'Handlebars.js '],
           type: 'Full Stack',
           img: 'taskTitan.png'
         },
         {
           name: 'Loot Vault',
           description: 'Loot Vault is a site for gamers to find the best deals on their favorite games. Users can search for games and see the best deals from multiple sites.',
-          techsUsed: ['html ', 'css ', 'javascript ', 'Bulma CSS ', 'APIs '],
+          techsUsed: ['html', 'css', 'javascript', 'Bulma CSS', 'APIs '],
           type: 'Front End',
           img: 'lootVault.png'
         },
         {
           name: 'Tech Blog',
           description: 'A blog thats allows developers post, comment, and like posts.',
-          techsUsed: ['Node.js ', 'Express.js ', 'MySQL ', 'Handlebars.js ', 'Sequlize'],
+          techsUsed: ['Node.js', 'Express.js', 'MySQL', 'Handlebars.js', 'Sequlize'],
           type: 'Full Stack',
         },
         {
           name: 'Employee Directory',
           description: 'A command line application to manage a company\'s employee database, using Node.js, Inquirer, and MySQL.',
-          techsUsed: ['Node.js ', 'MySQL ', ],
+          techsUsed: ['Node.js', 'MySQL', ],
           type: 'Back End',
           img: 'photo'
         },
@@ -61,14 +62,31 @@ export default function Projects(){
       <section className="projectSection py-20">
         <div className=" cardContainer grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-10">
           {projects.map((project, index) => (
-            <div key={index} className="border boxShadow textShadow scaleHover projectCards p-4">
+            <div key={index} className="border rounded boxShadow projectCards p-4">
               <div>
-                <h2 className=" text-3xl font-bold ">{project.name} </h2>
-                <h3 className=" text-1x1  border-b mb-4 pb-4">({project.type})</h3>
-                <p className="border-b textShadow my-4 py-4">{project.description}</p>
-                <img className="w-full scaleHover h-auto border-b my-8 " src={`../photos/${project.img}`} alt={project.name} />
-                <h4 className=" text-2xl font-bold">Tech Used:</h4>
-                <p className="my-4 py-4">{project.techsUsed.join(', ')}</p>
+                <div className="flex justify-between">
+                  <h2 className=" text-3xl font-bold mb-0  ">{project.name} </h2> 
+                  <div className="flex ">
+                    <CardButton>Github</CardButton>
+                    <CardButton>Deployed Site</CardButton>
+                  </div>
+                </div>
+                <h3 className=" text-1x1  border-b mb-4 pb-4 ">({project.type})</h3>
+                <p className="border-b my-4 py-4 h-36 ">{project.description}</p>
+                <div className="h-62">
+                  <img className="w-full boxShadow projectPhoto rounded projectHover my-8 h-64 " src={`../photos/${project.img}`} alt={project.name} />
+                </div>
+                <div className="h-36">
+                  <h4 className=" text-2xl pt-4 font-bold">Tech Used:</h4>
+                  {/* <p className="my-4 py-2">{project.techsUsed.join(', ')}</p> */}
+                  <p className="my-4 flex flex-wrap justify-start">
+                    {project.techsUsed.map((tech, index) => (
+                      <span key={index} className=" hoverShadow rounded w-32 m-0.5 text-center">
+                        {tech}
+                      </span>
+                    ))}
+                  </p>
+                </div>
               </div>
             </div>
           ))}

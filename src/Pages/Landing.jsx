@@ -43,18 +43,18 @@ export default function Landing() {
                 </div>
             ) : (
             <div>
-                <h1 className=" textShadow text-6xl scaleHover landingName font-bold">Avery Myers</h1>
+                <h1 className=" textShadow textShadowOnly text-6xl scaleHover landingName font-bold">Avery Myers</h1>
                 <p className=" textShadow tagLines text-4xl mt-4 scaleHover">Full Stack Web Developer</p>
                 <p className=" textShadow tagLines text-3xl mt-4 font-semibold scaleHover">Let's <span className="wordChange ">{currentWord}</span> together</p>
             </div>
             )}
             <div className="justify-end">
-                <div className=" boxShadow float-right relative w-80 h-64 mr-12 ">
-                    <div className="photoBack boxShadow absolute rounded-sm w-full h-full transform translate-x-4 translate-y-4"></div>
-                    <div className=" position scaleHover boxShadow relative w-80 h-64">
-                        <img src="../photos/headshot.jpg" alt="Avery Myers" className="  headshot rounded-sm absolute w-full h-full object-cover" />
+                <div className=" boxShadowOnly float-right relative w-80 h-64 mr-12 ">
+                    <div className="photoBack boxShadowOnly absolute w-full h-full rounded transform translate-x-4 translate-y-4"></div>
+                    <div className=" hoverShadow  position scaleHover relative w-80 h-64">
+                        <img src="../photos/headshot.jpg" alt="Avery Myers" className="headshot absolute w-full h-full object-cover" />
                         <div className=" boxShadow button-container ease-in-out duration-300  transition-transform absolute rounded-sm">
-                            <StyledButton className="button  dark" onClick={handleAboutMe}>About Me</StyledButton>
+                            <StyledButton backgroundColor="blue-500" textColor="white" onClick={handleAboutMe}>About Me</StyledButton>
                         </div>
                     </div>
                 </div>

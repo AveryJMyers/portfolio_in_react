@@ -9,11 +9,14 @@ export default function StyledButton({
   flipped
 }) {
   // Initialize the buttonStyle with the default CSS classes
-  let buttonStyle = "font-bold py-2 px-4 rounded-sm";
+  let buttonStyle = "styledButton font-bold p-1 hoverShadow   rounded m-1 transition-all ease-in-out duration-300 hover:scale-105";
 
   // Update the buttonStyle if 'flipped' prop is true
   if (flipped) {
     buttonStyle += " rotate-270"; // Add a space here
+  }
+  if (dark) {
+    buttonStyle+= ""
   }
 
   return (

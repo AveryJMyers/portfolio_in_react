@@ -44,7 +44,7 @@ export default function Header() {
             </div>
             <div className="flex ml-auto">
                 {navOptions.map((option, index) => (
-                    <a key={index} href={option.link || '#'} className=" navLink textShadow scaleHover mr-4 last:mr-0">
+                    <a key={index} href={option.link || '#'} className=" navLink scaleHover mr-4 last:mr-0">
                         {option.name}
                     </a>
                 ))}
