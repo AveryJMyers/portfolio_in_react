@@ -1,7 +1,6 @@
 
 .photoBack {
-  background-color: var(--accent-color);
-
+  background-color: var(--accent-font);
 }
 
 
@@ -83,9 +82,9 @@ input:checked + .slider:before {
   rotate: 270deg;
   right: 85%;
   top: 8%;
-  background-color: var(--accent-color);
+  background-color: var(--accent-font);
   position: absolute;
-  color: var(--text-color);
+  color: var(--background-color);
 }
 
 .button-container:hover{
@@ -169,3 +168,28 @@ input:checked + .slider:before {
 /* .projectPhoto{
   border: black 1px solid;
 } */
+
+
+/* project button */
+
+.btn{
+  background-color: var(--background-color);
+  color: black;
+  transition: background 200ms ease-in-out;
+}
+
+.border-line{
+  stroke: #000000;
+  stroke-width: 5px;
+  stroke-dasharray: 0 100;
+  transition: stroke-dasharray 750ms ease-in-out;
+}
+
+
+.btn:hover {
+  background-color: rgb(201, 35, 35) 
+}
+
+.btn:hover .border-line{
+  stroke-dasharray: 100 0;
+}

@@ -12,6 +12,9 @@
     .scaleHover {
       @apply transform transition-all ease-in-out duration-300 hover:scale-110;
     }
+    .scaleBigHover {
+      @apply transform transition-all ease-in-out duration-300 hover:scale-125;
+    }
     .projectHover {
       @apply transform transition-all ease-in-out duration-300 hover:scale-105;
     }

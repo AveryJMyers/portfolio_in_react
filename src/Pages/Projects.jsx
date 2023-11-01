@@ -2,7 +2,10 @@
 import '../styles.css'
 import '../App.css'
 import React from 'react';
-import CardButton from '../Components/StyledButton';
+import ProjectButton from '../Components/HoverButton';
+import StyledButton from '../Components/StyledButton';
+import HoverButton from '../Components/HoverButton';
+
 
 export default function Projects(){
 
@@ -10,16 +13,20 @@ export default function Projects(){
         {
           name: 'Wedloc',
           description: 'Wedloc is a photo/video sharing app for wedding guests. Guests can upload photos/videos, add comments, like, and even livechat.',
-          techsUsed: ['React.js', 'Node.js', 'MongoDB', 'GraphQL', 'Cloudinary', 'Socket.io', 'TailwindCSS', '+ more'],
+          techsUsed: ['React', 'Node', 'MongoDB', 'GraphQL', 'Cloudinary', 'Socket.io', 'TailwindCSS', '+ more'],
           techUsed: [ 'nodeIcon.png', 'graphqlIcon.png', 'cloudinaryIcon.png', 'tailwindIcon.png'],
           type: 'Full Stack',
+          deployedUrl: 'https://wedloc-84c89e3ae29d.herokuapp.com/',
+          githubUrl: 'https://github.com/markthos/wedloc',
           img: 'wedloc.jpg'
         },
         {
           name: 'Task Titan',
           description: 'Task Titan is a three level task management app. Project admins can add users and assign task. Workers may view taks and comment on them. Clients may see the progress of their projects.',
-          techsUsed: ['Node.js', 'Express.js', 'MySQL', 'Handlebars.js '],
+          techsUsed: ['Node', 'Express', 'MySQL', 'Handlebars'],
           type: 'Full Stack',
+          deployedUrl: 'https://task-titan-bec51c55ebe5.herokuapp.com/',
+          githubUrl: 'https://github.com/markthos/Task-Titan',
           img: 'taskTitan.png'
         },
         {
@@ -34,27 +41,30 @@ export default function Projects(){
           description: 'A blog thats allows developers post, comment, and like posts.',
           techsUsed: ['Node.js', 'Express.js', 'MySQL', 'Handlebars.js', 'Sequlize'],
           type: 'Full Stack',
+          deployedUrl: 'https://torvec.github.io/project_1_Loot_Vault/',
+          githubUrl: 'https://github.com/Torvec/project_1_Loot_Vault',
+          img: 'techBlog.png'
         },
-        {
-          name: 'Employee Directory',
-          description: 'A command line application to manage a company\'s employee database, using Node.js, Inquirer, and MySQL.',
-          techsUsed: ['Node.js', 'MySQL', ],
-          type: 'Back End',
-          img: 'photo'
-        },
-        {
-          name: 'Weather Dashboard',
-          description: 'A weather dashboard that allows users to search for a city and see the current weather and 5 day forecast.',
-          techsUsed: ['HTML ', 'CSS', 'JavaScript', 'APIs '],
-          type: 'Front End', 
-        },
-        {
-          name: 'Javascript Quiz',
-          description: 'A timed quiz that tests the users knowledge of javascript and tracks their high scores.',
-          techsUsed: ['HTML', 'CSS', 'Javascript'],
-          techUsed: ['htmlIcon.png', 'cssIcon.png', 'javascriptIcon.png'],
-          type: 'Front End',
-        }
+        // {
+        //   name: 'Employee Directory',
+        //   description: 'A command line application to manage a company\'s employee database, using Node.js, Inquirer, and MySQL.',
+        //   techsUsed: ['Node.js', 'MySQL', ],
+        //   type: 'Back End',
+        //   img: 'photo'
+        // },
+        // {
+        //   name: 'Weather Dashboard',
+        //   description: 'A weather dashboard that allows users to search for a city and see the current weather and 5 day forecast.',
+        //   techsUsed: ['HTML ', 'CSS', 'JavaScript', 'APIs '],
+        //   type: 'Front End', 
+        // },
+        // {
+        //   name: 'Javascript Quiz',
+        //   description: 'A timed quiz that tests the users knowledge of javascript and tracks their high scores.',
+        //   techsUsed: ['HTML', 'CSS', 'Javascript'],
+        //   techUsed: ['htmlIcon.png', 'cssIcon.png', 'javascriptIcon.png'],
+        //   type: 'Front End',
+        // }
 
       ];
 
@@ -62,24 +72,30 @@ export default function Projects(){
       <section className="projectSection py-20">
         <div className=" cardContainer grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-10">
           {projects.map((project, index) => (
-            <div key={index} className="border rounded boxShadow projectCards p-4">
-              <div>
-                <div className="flex justify-between">
-                  <h2 className=" text-3xl font-bold mb-0  ">{project.name} </h2> 
-                  <div className="flex ">
-                    <CardButton>Github</CardButton>
-                    <CardButton>Deployed Site</CardButton>
+            <div key={index} className=" boxShadowOnly rounded  projectCards p-4">
+              <div className="cardHeader border-b my-1 pb-4 items-center text-center flex justify-between">
+                  <div className="cardHeaderLeft text-start">
+                    <h2 className=" text-3xl font-bold mb-0  ">{project.name} </h2> 
+                    <h3 className=" text-1x1 ">({project.type})</h3>
                   </div>
-                </div>
-                <h3 className=" text-1x1  border-b mb-4 pb-1 ">({project.type})</h3>
-                <p className="border-b my-4 py-1 h-36 ">{project.description}</p>
+                  <div className="flex cardHeaderRight">
+                    <HoverButton redirect={project.deployedUrl} buttonText="Deployed"></HoverButton>
+                    <HoverButton buttonText="Github" redirect={project.githubUrl}></HoverButton>
+                
+                    {/* <StyledButton outline={true} redirect={project.deployedUrl}> Deployed</StyledButton>
+                    <StyledButton redirect={project.githubUrl} >Github</StyledButton> */}
+                  </div>
+              </div>
+                <p className=" h-36 my-4 pb-1 ">{project.description}</p>
                 <div className="h-62">
-                  <img className="w-full boxShadow projectPhoto rounded projectHover py-1 my-8 h-64 " src={`../photos/${project.img}`} alt={project.name} />
+                  <a href={project.deployedUrl} >
+                    <img className="w-full boxShadow projectPhoto  rounded projectHover my-4  border-b h-64 " src={`../photos/${project.img}`} alt={project.name} />
+                  </a>
                 </div>
                 <div className="h-36">
                   <h4 className=" text-2xl py-1 font-bold">Tech Used:</h4>
                   {/* <p className="my-4 py-2">{project.techsUsed.join(', ')}</p> */}
-                  <p className="grid grid-cols-2 w-80 ">
+                  <p className="grid grid-cols-3  ">
                     {project.techsUsed.map((tech, index) => (
                       <span key={index} className=" scaleHover rounded m-0.5 ">
                         {tech}
@@ -88,7 +104,6 @@ export default function Projects(){
                   </p>
                 </div>
               </div>
-            </div>
           ))}
         </div>
       </section>
