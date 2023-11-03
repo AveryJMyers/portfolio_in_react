@@ -36,8 +36,12 @@ export default function Header() {
         <>
         <div className='header text-md flex items-center p-4'>
             <div className='inline-flex items-center'>
-                <img src="../photos/linkedIn.png" alt="Avery Myers" className="scaleHover logo h-5 w-5 mr-4" />
-                <img src="../photos/git.png" alt="Avery Myers" className="scaleHover logo h-5 w-5 mr-4" />
+                <a href="https://www.linkedin.com/in/avery-m-108704110/" className="logo">
+                    <img src="../photos/linkedIn.png" alt="Avery Myers" className="scaleHover logo h-5 w-5 mr-4" />
+                </a>
+                <a href="https://github.com/AveryJMyers" className='logo'>
+                    <img src="../photos/git.png" alt="Avery Myers" className="scaleHover logo h-5 w-5 mr-4" />
+                </a>
                 <div className="relative inline-block items-center">
                     <ThemeToggler className="absolute scaleHover left-0"/>
                 </div>
