@@ -5,7 +5,7 @@ import React from 'react';
 export default function Resume(){
     let resumeExperience = [
         {
-          org: "UC Berkeley Extension",
+          org: "UC Berkeley Extension (Education)",
           title: "Full Stack Web Development",
           date: "(March 2023 - October 2023)",
           skills: [
@@ -23,6 +23,13 @@ export default function Resume(){
             date: '(2014-Present)',
             skills: ['Oversaw and optimized in-house shipping logistics, including stocking, delivery, and pick-up processes, enhancing operational workflow.', 'Led and motivated a small team, ensuring efficient inventory management and timely fulfillment of orders.','Created a detailed sales presentation for the CEO, effectively communicating product value and competitive positioning.', 'Sourced new products through extensive research and networking at national and international food shows, diversifying the product portfolio.'],
             additionalInfo: ''
+        },
+        {
+          org:'Task Titan',
+          title: 'Back-End Developer',
+          date: '2023',
+          skills: ['Designed Models, seeded data, and created routes for a three level task management app.', 'Implemented back-end routes for creation, deletion, editing, and adding users to projects.', 'Created a MySQL database and used Sequelize to interact with the database.'],
+          additionalInfo: ''
         },
         // {
         //     org: "UC Berkeley Extension",
@@ -44,6 +51,24 @@ export default function Resume(){
           skills: ['Collaborated effectively with a team of realtors, contributing to a cooperative work environment and successful joint ventures', 'Applied creative problem-solving to overcome transaction hurdles, displaying an ability to innovate solutions under pressure', 'Coordinated transactions from start to finish, ensuring a seamless process for all parties involved and showcasing organizational skills.'],
           additionalInfo: ''
         },
+        {
+          org:'Wedloc',
+          title: 'Back-End Developer',
+          date: '2023',
+          skills: ['Designed Models, Schemas, Resolvers, TypeDefs, Mutations, and Queries',
+
+        ],
+          additionalInfo: ''
+        },
+
+        
+        // {
+        //   org:'Keller Williams Realty (Professional)',
+        //   title: "Independent Contractor",
+        //   date: '(2021-2023)',
+        //   skills: ['Collaborated effectively with a team of realtors, contributing to a cooperative work environment and successful joint ventures', 'Applied creative problem-solving to overcome transaction hurdles, displaying an ability to innovate solutions under pressure', 'Coordinated transactions from start to finish, ensuring a seamless process for all parties involved and showcasing organizational skills.'],
+        //   additionalInfo: ''
+        // },
         // {
         //   org:'',
         //   title: '',
@@ -51,28 +76,41 @@ export default function Resume(){
         //   skills: [],
         //   additionalInfo: ''
         // },
+        
+        
+
 
     ];
     // py-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10
     return (
-      <section className='resumeSection '>
-          {/* <div className='' >
+      <section className='resumeSection mx-64 py-10 '>
+          <div className='border-b ml-2' >
               <h2 className="text-2xl w-full font-bold mb-0">Avery Myers</h2>
               <h3 className="text-1xl w-full  font-bold mb-0">Gig Harbor, WA</h3>
               <h3 className="text-1xl font-bold mb-0">Full Stack Web Developer</h3>
-              <h3 className="text-1xl font-bold mb-0">(360)-509-8887</h3>
-          </div> */}
-          <div className=" flex-wrap justify-start py-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10">
+              <h3 className="text-1xl font-bold mb-0">360-509-8887</h3>
+              <h3 className="text-1xl font-bold mb-0">AveryJMyers@Outlook.com</h3>
+              <div className='inline-flex items-center justify-center py-2'>
+                <a href="https://www.linkedin.com/in/avery-m-108704110/" className="logo">
+                    <img src="../photos/linkedIn.png" alt="Avery Myers" className="scaleHover logo h-5 w-5 mr-4" />
+                </a>
+                <a href="https://github.com/AveryJMyers" className='logo'>
+                    <img src="../photos/git.png" alt="Avery Myers" className="scaleHover logo h-5 w-5 mr-4" />
+                </a>
+              </div>
+              
+          </div>
+          <div className="py-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 justify-start  py-10   ">
             {resumeExperience.map((experience, index) => (
-              <div key={index} className=" ">
-                  <div className="resumeHeader"> 
-                      <h2 className="text-2xl text-center font-bold mb-0">{experience.org}</h2>
-                      <h3 className="text-1xl text-center font-bold  mb-0">{experience.title}</h3>
-                      <p className="text-1xl text-center mb-0 border-b pb-4 ">{experience.date}</p>
+              <div key={index} className="flex flex-col  ">
+                  <div className="resumeHeader ml-2 text-start "> 
+                      <h2 className="text-2xl font-bold mb-0">{experience.org}</h2>
+                      <h3 className="text-1xl font-bold  mb-0">{experience.title}</h3>
+                      <p className="text-1xl mb-0 flex-grow border-b pb-4 ">{experience.date}</p>
                   </div>
-                <ul>
+                <ul className="ml-2">
                   {experience.skills.map((skill, skillIndex) => (
-                    <li className="py-2 border-b" key={skillIndex}>{skill}</li>
+                    <li className="py-2 border-b " key={skillIndex}>{skill}</li>
                   ))}
                 </ul>
                 <p>{experience.additionalInfo}</p>

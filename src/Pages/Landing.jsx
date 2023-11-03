@@ -31,9 +31,9 @@ export default function Landing() {
 
     //  landingSection flex custom-height  pb-32 justify-between items-center
     return (
-    <section>
+    <section className='landingSection'>
         
-        <div className="landingSection grid grid-cols-1 custom-height pb-32 lg:grid-cols-2 items-center justify-between sm:justify-center text-center ">
+        <div className=" mx-60 grid grid-cols-1 custom-height pb-32 lg:grid-cols-2 items-center justify-between sm:justify-center text-center ">
             {aboutMe ? (
             <div>
                     <h1 className=" textShadow text-6xl scaleHover landingName font-bold border-b-4 border-black mb-4">About</h1>

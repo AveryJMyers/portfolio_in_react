@@ -34,7 +34,7 @@ export default function Header() {
     ]
     return (
         <>
-        <div className='header text-md flex items-center p-4'>
+        <div className='header text-md flex items-center mx-60 p-4'>
             <div className='inline-flex items-center'>
                 <a href="https://www.linkedin.com/in/avery-m-108704110/" className="logo">
                     <img src="../photos/linkedIn.png" alt="Avery Myers" className="scaleHover logo h-5 w-5 mr-4" />
