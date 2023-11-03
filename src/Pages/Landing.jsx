@@ -33,7 +33,7 @@ export default function Landing() {
     return (
     <section>
         
-        <div className="landingSection grid gird-cols-1 custom-height pb-32 lg:grid-cols-2 items-center justify-between ">
+        <div className="landingSection grid grid-cols-1 custom-height pb-32 lg:grid-cols-2 items-center justify-between sm:justify-center text-center ">
             {aboutMe ? (
             <div>
                     <h1 className=" textShadow text-6xl scaleHover landingName font-bold border-b-4 border-black mb-4">About</h1>
@@ -48,7 +48,7 @@ export default function Landing() {
                 <p className=" textShadow tagLines text-3xl mt-4 font-semibold scaleHover">Let's <span className="wordChange ">{currentWord}</span> together</p>
             </div>
             )}
-            <div className="justify-end">
+            <div className="justify-end sm:justify-center ">
                 <div className=" boxShadowOnly float-right relative w-80 h-64 mr-12 ">
                     <div className="photoBack boxShadowOnly absolute w-full h-full rounded transform translate-x-4 translate-y-4"></div>
                     <div className=" hoverShadow  position scaleHover relative w-80 h-64">

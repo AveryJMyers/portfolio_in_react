@@ -11,6 +11,7 @@ import Projects from './Pages/Projects';
 import Header from './Components/Header'
 import LogoAnimation from './Components/LogoAnimation';
 import Cloud from './Components/Cloud';
+import Resume from './Pages/Resume';
 
 function App() {
 return <>
@@ -19,6 +20,7 @@ return <>
     <Cloud/>
     <Landing/>
     <Projects/>
+    <Resume/>
   </div>
 </>
 }

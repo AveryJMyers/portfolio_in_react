@@ -70,10 +70,10 @@ export default function Projects(){
 
     return (
       <section className="projectSection py-20">
-        <div className=" cardContainer grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-10">
+        <div className=" cardContainer grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-12">
           {projects.map((project, index) => (
             <div key={index} className=" boxShadowOnly rounded  projectCards p-4">
-              <div className="cardHeader border-b my-1 pb-4 items-center text-center flex justify-between">
+              <div className="cardHeader border-b my-1  pb-4 items-center text-center flex justify-between">
                   <div className="cardHeaderLeft text-start">
                     <h2 className=" text-3xl font-bold mb-0  ">{project.name} </h2> 
                     <h3 className=" text-1x1 ">({project.type})</h3>

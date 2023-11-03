@@ -1,11 +1,15 @@
 
 .photoBack {
-  background-color: var(--accent-font);
+  background-color: var(--accent-color);
 }
 
 
 
 /* nav */
+
+.header{
+  color: #000000;
+}
 
 
 
@@ -82,9 +86,9 @@ input:checked + .slider:before {
   rotate: 270deg;
   right: 85%;
   top: 8%;
-  background-color: var(--accent-font);
+  background-color: var(--accent-color);
   position: absolute;
-  color: var(--background-color);
+  color: var(--accent-font);
 }
 
 .button-container:hover{
@@ -192,4 +196,23 @@ input:checked + .slider:before {
 
 .btn:hover .border-line{
   stroke-dasharray: 100 0;
+}
+
+/* Resume */
+
+li::before {
+  content: '•';
+  display: inline-block;
+  width: 1.5em; /* Adjust the width as needed */
+  margin-left: -1.5em; /* This should be the same as width to align the bullet properly */
+}
+
+li {
+  list-style: none; /* Remove default list styling */
+  padding-left: 1.5em; /* Make room for the bullet */
+}
+
+
+.resumeSection{
+  color: var(--accent-font);
 }
