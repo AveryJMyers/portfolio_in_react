@@ -37,21 +37,17 @@ export default function SingleLanding() {
     return (
     <section className='landingSection landingSection  h-full'>
         <LandingNav></LandingNav>
-        <div className=" mx-60 grid grid-cols-1 md:grid-cols-2 gap-32   p-4 items-center justify-center  text-center pt-32 flex flex-col  ">
+        <div className=" mx-60 grid grid-cols-1 md:grid-cols-1 gap-32    p-4 items-center justify-center  text-center pt-32 flex flex-col  ">
             <div>
                 <h1 className=" textShadow textShadowOnly text-5xl scaleHover landingName font-bold">Avery Myers</h1>
                 <p className=" textShadow tagLines text-3xl mt-4 scaleHover">Full Stack Web Developer</p>
                 <p className=" textShadow tagLines text-2xl mt-4 font-semibold scaleHover">Let's <span className="wordChange ">{currentWord}</span> together</p>
                 <ContactList></ContactList>
             </div>
-            <div className="justify-end sm:justify-center ">
+            <div className="justify-end sm:justify-center  ">
                 
-                <div className=" scaleHover boxShadow  relative w-80 h-64 mr-12 ">
-                <img src="../photos/headshot.jpg" alt="Avery Myers" className="headshot absolute w-full h-full object-cover" />
-                    {/* <div className="photoBack boxShadowOnly absolute w-full h-full rounded transform translate-x-4 translate-y-4"></div>
-                    <div className=" hoverShadow  position scaleHover relative w-80 h-64">
-                        <img src="../photos/headshot.jpg" alt="Avery Myers" className="headshot absolute w-full h-full object-cover" />
-                    </div> */}
+                <div className=" scaleHover boxShadow w-80 h-64 mr-12 ">
+                <img src="../photos/headshot.jpg" alt="Avery Myers" className="headshot  w-full h-full object-cover" />
                 </div>
             </div>
         </div>

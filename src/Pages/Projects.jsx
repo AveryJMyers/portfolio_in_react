@@ -70,10 +70,11 @@ export default function Projects(){
 
       ];
 
+
     return (
         <section className='projectSection'>
         <LandingNav></LandingNav>
-        <div className="projectSection py-20 ">
+        <div className="projectSection py-20 mx-60">
           <div className=" cardContainer grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-12">
             {projects.map((project, index) => (
               <div key={index} className=" boxShadowOnly rounded  projectCards p-4">
@@ -83,8 +84,8 @@ export default function Projects(){
                       <h3 className=" text-1x1 ">({project.type})</h3>
                     </div>
                     <div className="flex justify-end cardHeaderRight w-1/2 ">
-                      <StyledButton type="project" className=''>Github</StyledButton>
-                      <StyledButton type="project" className=''>Deployed</StyledButton>
+                      <StyledButton type="project" className='githubButton' redirect={project.githubUrl}>Github</StyledButton>
+                      <StyledButton type="project" redirect={project.deployedUrl} className='deployedButton'>Deployed</StyledButton>
                     </div>
                 </div>
                   <p className=" h-36 my-4 pb-1 ">{project.description}</p>

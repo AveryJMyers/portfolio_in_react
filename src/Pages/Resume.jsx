@@ -2,10 +2,17 @@ import '../styles.css'
 import '../App.css'
 import React from 'react';
 import LandingNav from '../Components/LandingNav';
+import { useForm, ValidationError } from '@formspree/react';
+
 
 
 export default function Resume(){
 
+  const [state, handleSubmit] = useForm("xbjvbqyv");
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
+
+  }
 
   let codingExperience = [
     {
@@ -46,9 +53,6 @@ export default function Resume(){
     }
   ];
 
-
-
-
     let resumeExperience = [
         {
           org: "UC Berkeley Extension",
@@ -66,7 +70,7 @@ export default function Resume(){
             org: "Kennedy Holdings Inc.",
             title: 'Warehouse Manager',
             date: '(2014-Present)',
-            skills: ['Oversaw and optimized in-house shipping logistics, including stocking, delivery, and pick-up processes, enhancing operational workflow.', 'Led and motivated a small team, ensuring efficient inventory management and timely fulfillment of orders.','Created a detailed sales presentation for the CEO, effectively communicating product value and competitive positioning.', 'Sourced new products through extensive research and networking at national and international food shows, diversifying the product portfolio.'],
+            skills: ['Oversaw and optimized in-house shipping logistics, including stocking, delivery, and pick-up processes, enhancing operational workflow.', 'Led and motivated a small team, ensuring efficient inventory management and timely fulfillment of orders.','Created a detailed sales presentation for the CEO, effectively communicating product value and competitive positioning.', 'Sourced new products through extensive research and networking at national and international food shows.'],
         },
         {
           org: "Wedloc Application",
@@ -80,19 +84,6 @@ export default function Resume(){
             "Created and managed a MongoDB database using Mongoose, optimizing data storage and retrieval.",
           ]
         },
-        // {
-        //     org: "UC Berkeley Extension",
-        //     title: "Full Stack Web Development",
-        //     date: "(March 2023 - October 2023)",
-        //     skills: [
-        //         "Completed 18 real world like projects, including 3 group projects, and 15 individual projects.",
-        //         "Front End: HTML, CSS, JavaScript, jQuery, React.js, Bootstrap, TailwindCSS, Vite",
-        //         "Back End: Node.js, Express.js, MySQL, MongoDB, GraphQL, REST, JSON, AJAX, HTTP",
-        //         "Deployment: Heroku, Git, shell scripting, unit testing, linting, CI practices.",
-        //         "Other: Group Decision making, timelines, figma, and agile development practices."
-        //   ],
-        //   additionalInfo: ""
-        // },
         {
           org:'Cedarland Real Estate',
           title: "Buyer's Agent",
@@ -111,19 +102,8 @@ export default function Resume(){
           date: '(2019-2021)',
           skills: ['Collaborated effectively with a team of realtors, contributing to a cooperative work environment and successful joint ventures', 'Applied creative problem-solving to overcome transaction hurdles, displaying an ability to innovate solutions under pressure', 'Coordinated transactions from start to finish, ensuring a seamless process for all parties involved and showcasing organizational skills.'],
         },
-        // {
-        //   org:'',
-        //   title: '',
-        //   date: '',
-        //   skills: [],
-        //   additionalInfo: ''
-        // },
-        
-        
-
-
     ];
-    // py-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10
+
     return (
         <>
         <LandingNav></LandingNav>

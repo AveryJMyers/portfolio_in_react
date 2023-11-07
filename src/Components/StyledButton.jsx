@@ -1,4 +1,4 @@
-import '../App.css';
+
 import React from 'react';
 
 const buttonTypes = {
@@ -10,14 +10,26 @@ export default function StyledButton({
   onClick,
   disabled,
   children,
+  redirect,
   type = 'submit', 
 }) {
   let buttonStyle = ` border border-black text-center items-center justify-center tyledButton font-bold  shadowOnly text-black rounded-full m-1 ${buttonTypes[type]}`;
 
+
+
+  const handleButtonClick = () => {
+    if (redirect) {
+      window.location.href = redirect;
+    }
+    if (onClick) {
+      onClick();
+    }
+  };
+
   return (
     <button
       className={buttonStyle}
-      onClick={onClick}
+      onClick={handleButtonClick}
       disabled={disabled}
     >
       {children}

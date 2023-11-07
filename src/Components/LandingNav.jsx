@@ -49,7 +49,6 @@ export default function LandingNav() {
                     </a>
                 ))}
             </div>
-            <ThemeToggler></ThemeToggler>
         </div>
         </>
 
