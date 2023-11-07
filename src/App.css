@@ -7,9 +7,6 @@
 
 /* nav */
 
-.header{
-  color: #000000;
-}
 
 
 
@@ -128,7 +125,7 @@ input:checked + .slider:before {
 
 .projectSection{
   color: var(--text-color);
-  background-color:var(--accent-color);
+  background-color: var(--background-color);
 }
 
 .projectCards{
@@ -210,6 +207,7 @@ li::before {
 li {
   list-style: none; /* Remove default list styling */
   padding-left: 1.5em; /* Make room for the bullet */
+  align-items: center;
 }
 
 

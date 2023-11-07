@@ -6,7 +6,6 @@ import ProjectButton from '../Components/HoverButton';
 import StyledButton from '../Components/StyledButton';
 import HoverButton from '../Components/HoverButton';
 import Header from '../Components/Header';
-import LandingNav from '../Components/LandingNav';
 
 
 export default function Projects(){
@@ -72,7 +71,7 @@ export default function Projects(){
 
     return (
         <section className='projectSection'>
-        <LandingNav></LandingNav>
+        <Header></Header>
         <div className="projectSection py-20 ">
           <div className=" cardContainer grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-12">
             {projects.map((project, index) => (
@@ -83,8 +82,11 @@ export default function Projects(){
                       <h3 className=" text-1x1 ">({project.type})</h3>
                     </div>
                     <div className="flex cardHeaderRight">
-                      <StyledButton size="project" className=''>Github</StyledButton>
-                      <StyledButton size="project" className=''>Deployed</StyledButton>
+                      <HoverButton redirect={project.deployedUrl} buttonText="Deployed"></HoverButton>
+                      <HoverButton buttonText="Github" redirect={project.githubUrl}></HoverButton>
+                  
+                      {/* <StyledButton outline={true} redirect={project.deployedUrl}> Deployed</StyledButton>
+                      <StyledButton redirect={project.githubUrl} >Github</StyledButton> */}
                     </div>
                 </div>
                   <p className=" h-36 my-4 pb-1 ">{project.description}</p>

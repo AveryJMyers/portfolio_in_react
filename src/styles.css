@@ -50,7 +50,8 @@
   --background-shadow:rgba(0, 0, 0, 0.3);;
   --hovered-shadow:rgba(0, 0, 0, 0.45);
   font-family: 'Roboto Mono', monospace;
-  --background-color: white 
+  --background-color: #f6f6f6;
+  --background-color: white;
 
 }
 
@@ -69,7 +70,6 @@ body {
     padding:0;
     background-color: var(--background-color);
     color: var(--text-color);
-    transition: all 0.3s ease-in-out;
 }
 
  /* .header, .resumeSection {

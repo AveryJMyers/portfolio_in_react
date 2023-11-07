@@ -1,6 +1,8 @@
 import '../styles.css'
 import '../App.css'
 import React from 'react';
+import LandingNav from '../Components/LandingNav';
+
 
 export default function Resume(){
     let resumeExperience = [
@@ -28,7 +30,7 @@ export default function Resume(){
           org:'Task Titan',
           title: 'Back-End Developer',
           date: '2023',
-          skills: ['Designed Models, seeded data, and created routes for a three level task management app.', 'Implemented back-end routes for creation, deletion, editing, and adding users to projects.', 'Created a MySQL database and used Sequelize to interact with the database.'],
+          skills: ['Designed Models, seeded data, and created routes for a three level task management app.', 'Implemented back-end routes for creation, deletion, editing, and adding users to projects.', 'Created a MySQL database and used Sequelize to interact with the database.', 'fadssf afkskfa fakf sfka faksf ad fkda fk af kadkf af kak fa fa fk da kfs'],
           additionalInfo: ''
         },
         // {
@@ -52,7 +54,7 @@ export default function Resume(){
           additionalInfo: ''
         },
         {
-          org:'Wedloc',
+          org:'Front-End Experience',
           title: 'Back-End Developer',
           date: '2023',
           skills: ['Designed Models, Schemas, Resolvers, TypeDefs, Mutations, and Queries',
@@ -83,40 +85,11 @@ export default function Resume(){
     ];
     // py-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10
     return (
-      <section className='resumeSection mx-64 py-10 '>
-          <div className='border-b ml-2' >
-              <h2 className="text-2xl w-full font-bold mb-0">Avery Myers</h2>
-              <h3 className="text-1xl w-full  font-bold mb-0">Gig Harbor, WA</h3>
-              <h3 className="text-1xl font-bold mb-0">Full Stack Web Developer</h3>
-              <h3 className="text-1xl font-bold mb-0">360-509-8887</h3>
-              <h3 className="text-1xl font-bold mb-0">AveryJMyers@Outlook.com</h3>
-              <div className='inline-flex items-center justify-center py-2'>
-                <a href="https://www.linkedin.com/in/avery-m-108704110/" className="logo">
-                    <img src="../photos/linkedIn.png" alt="Avery Myers" className="scaleHover logo h-5 w-5 mr-4" />
-                </a>
-                <a href="https://github.com/AveryJMyers" className='logo'>
-                    <img src="../photos/git.png" alt="Avery Myers" className="scaleHover logo h-5 w-5 mr-4" />
-                </a>
-              </div>
-              
-          </div>
-          <div className="py-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 justify-start  py-10   ">
-            {resumeExperience.map((experience, index) => (
-              <div key={index} className="flex flex-col  ">
-                  <div className="resumeHeader ml-2 text-start "> 
-                      <h2 className="text-2xl font-bold mb-0">{experience.org}</h2>
-                      <h3 className="text-1xl font-bold  mb-0">{experience.title}</h3>
-                      <p className="text-1xl mb-0 flex-grow border-b pb-4 ">{experience.date}</p>
-                  </div>
-                <ul className="ml-2">
-                  {experience.skills.map((skill, skillIndex) => (
-                    <li className="py-2 border-b " key={skillIndex}>{skill}</li>
-                  ))}
-                </ul>
-                <p>{experience.additionalInfo}</p>
-              </div>
-            ))}
-          </div>
+      <section className='resumeSection mx-64 gap-2'>
+        <LandingNav></LandingNav>
+        <div>
+        
+        </div>
         </section>
         );
       }
@@ -131,3 +104,24 @@ export default function Resume(){
     //     "Implemented server-side development emphasizing user authentication, template engines, and the MERN stack.",
     //     "Acquired skills in deployment using Heroku, Git, shell scripting, unit testing, linting, and CI practices."
     // ],
+
+
+    // <section className='resumeSection mx-64 py-10 '>
+    //       <div className="py-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 justify-start  py-10   ">
+    //         {resumeExperience.map((experience, index) => (
+    //           <div key={index} className="flex flex-col  ">
+    //               <div className="resumeHeader ml-2 text-start "> 
+    //                   <h2 className="text-2xl font-bold mb-0">{experience.org}</h2>
+    //                   <h3 className="text-1xl font-bold  mb-0">{experience.title}</h3>
+    //                   <p className="text-1xl mb-0 flex-grow border-b pb-4 ">{experience.date}</p>
+    //               </div>
+    //             <ul className="ml-2">
+    //               {experience.skills.map((skill, skillIndex) => (
+    //                 <li className="py-2 border-b " key={skillIndex}>{skill}</li>
+    //               ))}
+    //             </ul>
+    //             <p>{experience.additionalInfo}</p>
+    //           </div>
+    //         ))}
+    //       </div>
+    //     </section>
