@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Header from '../Components/Header';
 import StyledButton from '../Components/StyledButton';
 import LandingNav from '../Components/LandingNav';
+import ContactList from '../Components/ContactList';
 
 export default function SingleLanding() {
     const words = ['CREATE', 'DESIGN', 'BUILD', 'LEARN', 'DEVELOP', 'INNOVATE', 'THRIVE'];
@@ -37,27 +38,20 @@ export default function SingleLanding() {
     <section className='landingSection landingSection  h-full'>
         <LandingNav></LandingNav>
         <div className=" mx-60 grid grid-cols-1 md:grid-cols-2 gap-32   p-4 items-center justify-center  text-center pt-32 flex flex-col  ">
-            {aboutMe ? (
-            <div>
-                    <h1 className=" textShadow text-6xl scaleHover landingName font-bold border-b-4 border-black mb-4">About</h1>
-                    <p className="text-3xl textShadow ">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium qui enim magni explicabo, consequuntur corporis asperiores, ratione quisquam ipsam iure consectetur eum neque?lorem23
-                    </p>
-                </div>
-            ) : (
             <div>
                 <h1 className=" textShadow textShadowOnly text-5xl scaleHover landingName font-bold">Avery Myers</h1>
                 <p className=" textShadow tagLines text-3xl mt-4 scaleHover">Full Stack Web Developer</p>
                 <p className=" textShadow tagLines text-2xl mt-4 font-semibold scaleHover">Let's <span className="wordChange ">{currentWord}</span> together</p>
+                <ContactList></ContactList>
             </div>
-            )}
             <div className="justify-end sm:justify-center ">
                 
-                <div className=" boxShadowOnly  relative w-80 h-64 mr-12 ">
-                    <div className="photoBack boxShadowOnly absolute w-full h-full rounded transform translate-x-4 translate-y-4"></div>
+                <div className=" scaleHover boxShadow  relative w-80 h-64 mr-12 ">
+                <img src="../photos/headshot.jpg" alt="Avery Myers" className="headshot absolute w-full h-full object-cover" />
+                    {/* <div className="photoBack boxShadowOnly absolute w-full h-full rounded transform translate-x-4 translate-y-4"></div>
                     <div className=" hoverShadow  position scaleHover relative w-80 h-64">
                         <img src="../photos/headshot.jpg" alt="Avery Myers" className="headshot absolute w-full h-full object-cover" />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

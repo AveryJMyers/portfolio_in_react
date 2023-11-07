@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import StyledButton from '../Components/StyledButton';
 import LandingNav from '../Components/LandingNav';
+import ContactList from '../Components/ContactList';
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -23,8 +24,9 @@ export default function Contact() {
     <>
     <section className='h-screen mx-60'>
         <LandingNav></LandingNav>
+        
         <section className="flex flex-row justify-center gap-24 mt-16 items-center ">
-            <div className="w-1/3 cols-1 ">
+            <div className="w-1/2 cols-1 ">
                 <h1 className="text-2xl text-center  text-black mb-4">
                   Email Me
                 </h1>
@@ -36,16 +38,8 @@ export default function Contact() {
                         <StyledButton size="submit" className=''> SEND </StyledButton>
                     </div>
                 </form>
-            </div>
-            <div className="w-1/3 ">
-                <h1 className="text-2xl text-center  text-black mb-4">
-                 Other Contact Info
-                </h1>
-                <div className='flex shadow px-4 py-4 flex-col rounded-sm'>
-                    Linked In <br></br>
-                    Github <br></br>
-                    Phone
-                </div>
+                <h1 className='text-2xl text-center  text-black mt-4 p-2 '>Other Options:</h1>
+                <ContactList></ContactList>
             </div>
         </section>
     </section>

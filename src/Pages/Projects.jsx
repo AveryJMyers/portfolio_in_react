@@ -82,9 +82,9 @@ export default function Projects(){
                       <h2 className=" text-3xl font-bold mb-0  ">{project.name} </h2> 
                       <h3 className=" text-1x1 ">({project.type})</h3>
                     </div>
-                    <div className="flex cardHeaderRight">
-                      <StyledButton size="project" className=''>Github</StyledButton>
-                      <StyledButton size="project" className=''>Deployed</StyledButton>
+                    <div className="flex justify-end cardHeaderRight w-1/2 ">
+                      <StyledButton type="project" className=''>Github</StyledButton>
+                      <StyledButton type="project" className=''>Deployed</StyledButton>
                     </div>
                 </div>
                   <p className=" h-36 my-4 pb-1 ">{project.description}</p>

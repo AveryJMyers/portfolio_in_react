@@ -1,8 +1,4 @@
 
-.photoBack {
-  background-color: var(--accent-color);
-}
-
 
 
 /* nav */
@@ -73,24 +69,10 @@ input:checked + .slider:before {
 
 /* more trying with button */
 
-.headshot{
+/* .headshot{
   z-index: 1;
 
-}
-
-
-.button-container{
-  rotate: 270deg;
-  right: 85%;
-  top: 8%;
-  background-color: var(--accent-color);
-  position: absolute;
-  color: var(--accent-font);
-}
-
-.button-container:hover{
-  transform: translateY(-60%); 
-}
+} */
 
 
 
@@ -101,19 +83,11 @@ input:checked + .slider:before {
 .landingName{
   color: var(--accent-font);
 }
-/* 
-.tagLines, .landingName{
-  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-} */
 
 .landingName:hover, .tagLines:hover  {
   text-shadow: 0 5px 10px rgba(0, 0, 0, 0.45);
 }
 
-/* .headshot:hover{
-  box-shadow:0 4px 6px rgba(0, 0, 0, 0.3);
-  
-} */
 .wordChange{
   color: var(--accent-font);
 }
@@ -131,7 +105,6 @@ input:checked + .slider:before {
 .projectCards{
   background-color: var(--background-color);
   color: var(--accent-font);
-  border: white solid 2px;
 }
 
 .cardContainer{
@@ -196,21 +169,30 @@ input:checked + .slider:before {
 }
 
 /* Resume */
-
+/* 
 li::before {
   content: '•';
   display: inline-block;
-  width: 1.5em; /* Adjust the width as needed */
-  margin-left: -1.5em; /* This should be the same as width to align the bullet properly */
+  width: 1.5em; 
 }
 
 li {
-  list-style: none; /* Remove default list styling */
-  padding-left: 1.5em; /* Make room for the bullet */
+  list-style: none;
+  padding-left: 1.5em;
   align-items: center;
+  list-style-position: inside;
 }
-
+ */
 
 .resumeSection{
   color: var(--accent-font);
+}
+
+
+/* nav again */
+
+
+.active{
+  color: #000000;
+  scale: 130%;
 }
