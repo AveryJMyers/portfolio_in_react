@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 import '../styles.css'
 import '../App.css'
@@ -34,12 +34,17 @@ export default function LandingNav() {
             link: "/contact",
         },
     ]
+
+    const location = useLocation();
+
     return (
         <>
-        <div className='header text-2xl flex justify-center content-center items-center text-black text-bold bg-transparent  pt-16 p-4'>
+        <div className='header text-2xl flex justify-center content-center items-center  text-bold bg-transparent  pt-16 p-4'>
             <div className="flex ">
                 {navOptions.map((option, index) => (
-                    <a key={index} to={option.link} href={option.link || '#'} className=" navLink scaleHover mr-12 last:mr-0">
+                    <a key={index} to={option.link} href={option.link || '#'} className={`navLink scaleHover mr-12 last:mr-0 ${
+                        option.link === location.pathname ? 'active' : ''
+                    }`}>
                         {option.name}
                     </a>
                 ))}

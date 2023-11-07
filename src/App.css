@@ -1,8 +1,4 @@
 
-.photoBack {
-  background-color: var(--accent-color);
-}
-
 
 
 /* nav */
@@ -16,7 +12,7 @@
 /* The switch - the box around the slider */
 
 /* I NEED TO REWORK THE SWITCH HERE */
-.switch {
+/* .switch {
   font-size: 17px;
   position: absolute;
   width: 1.75em;
@@ -64,7 +60,7 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform: translateX(1.4em) rotate(360deg);
 }
-
+ */
 
 
 
@@ -73,24 +69,10 @@ input:checked + .slider:before {
 
 /* more trying with button */
 
-.headshot{
+/* .headshot{
   z-index: 1;
 
-}
-
-
-.button-container{
-  rotate: 270deg;
-  right: 85%;
-  top: 8%;
-  background-color: var(--accent-color);
-  position: absolute;
-  color: var(--accent-font);
-}
-
-.button-container:hover{
-  transform: translateY(-60%); 
-}
+} */
 
 
 
@@ -101,19 +83,11 @@ input:checked + .slider:before {
 .landingName{
   color: var(--accent-font);
 }
-/* 
-.tagLines, .landingName{
-  text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-} */
 
 .landingName:hover, .tagLines:hover  {
   text-shadow: 0 5px 10px rgba(0, 0, 0, 0.45);
 }
 
-/* .headshot:hover{
-  box-shadow:0 4px 6px rgba(0, 0, 0, 0.3);
-  
-} */
 .wordChange{
   color: var(--accent-font);
 }
@@ -131,12 +105,9 @@ input:checked + .slider:before {
 .projectCards{
   background-color: var(--background-color);
   color: var(--accent-font);
-  border: white solid 2px;
 }
 
-.cardContainer{
-  margin: 0 17% 0 17%;
-}
+
 
 
 
@@ -150,67 +121,14 @@ input:checked + .slider:before {
   transform: translate(-50%,-50%);
 }
 
-.githubBotton{
-  background-color: aqua;
-}
-
-.styledButton{
-
-  /* box-shadow:0 4px 6px var(--background-shadow); */
-  transition: smooth 0.3s ease-in-out;
-}
-/* 
-.styledButton:hover{
-  box-shadow: 0 5px 10px var(--hovered-shadow);
-  
-
-} */
-
-/* .projectPhoto{
-  border: black 1px solid;
-} */
-
-
-/* project button */
-
-.btn{
-  background-color: var(--background-color);
-  color: black;
-  transition: background 200ms ease-in-out;
-}
-
-.border-line{
-  stroke: #000000;
-  stroke-width: 5px;
-  stroke-dasharray: 0 100;
-  transition: stroke-dasharray 750ms ease-in-out;
-}
-
-
-.btn:hover {
-  background-color: rgb(201, 35, 35) 
-}
-
-.btn:hover .border-line{
-  stroke-dasharray: 100 0;
-}
-
-/* Resume */
-
-li::before {
-  content: '•';
-  display: inline-block;
-  width: 1.5em; /* Adjust the width as needed */
-  margin-left: -1.5em; /* This should be the same as width to align the bullet properly */
-}
-
-li {
-  list-style: none; /* Remove default list styling */
-  padding-left: 1.5em; /* Make room for the bullet */
-  align-items: center;
-}
 
 
 .resumeSection{
   color: var(--accent-font);
+}
+
+
+.active{
+  color: #000000;
+  scale: 130%;
 }
