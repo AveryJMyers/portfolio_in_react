@@ -6,7 +6,7 @@ export default function About() {
     return (
     <>
     <LandingNav></LandingNav>
-    <section className='mx-60 h-full flex py-20  '>
+    <section className='sm:mx-20 md:mx-40 lg:mx-60 h-full flex py-20  '>
         <div className='w-2/4  boxShadowOnly'>
             <p className='mr-10 my-1 p-4 ml-4'>
                 I am a 24-year-old professional in the midst of a transformative career journey. With a diverse background that includes roles as a Real Estate Agent and Warehouse Manager, I bring a unique perspective to the tech industry. I recently completed the rigorous Full Stack Coding Bootcamp with UCB Extensions, which has equipped me with a strong foundation in web development technologies. My ambition is to excel in the tech industry, whether through tech sales, sales engineering, or pursuing a role as a junior web developer. I am driven by the endless possibilities and challenges that lie ahead in this dynamic field.

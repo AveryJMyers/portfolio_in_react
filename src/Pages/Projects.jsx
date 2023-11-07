@@ -74,7 +74,7 @@ export default function Projects(){
     return (
         <section className='projectSection'>
         <LandingNav></LandingNav>
-        <div className="projectSection py-20 mx-60">
+        <div className="projectSection py-20 sm:mx-20 md:mx-40 lg:mx-60 ">
           <div className=" cardContainer grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-12">
             {projects.map((project, index) => (
               <div key={index} className=" boxShadowOnly rounded  projectCards p-4">

@@ -39,11 +39,11 @@ export default function Contact() {
   };
     return (
     <>
-    <section className='h-screen mx-60'>
+    <section className=' sm:mx-20 md:mx-40 lg:mx-60'>
         <LandingNav></LandingNav>
         
         <section className="flex flex-row justify-center gap-24 mt-16 items-center ">
-          <div className="w-1/2 cols-1 ">
+          <div className="w-1/2 cols-1  ">
             <h1 className="text-2xl text-center text-black mb-4">
               Email Me
             </h1>

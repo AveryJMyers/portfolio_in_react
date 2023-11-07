@@ -35,18 +35,17 @@ export default function SingleLanding() {
 
     //  landingSection flex custom-height  pb-32 justify-between items-center
     return (
-    <section className='landingSection landingSection  h-full'>
+    <section className='landingSection landingSection h-screen w-screen h-full'>
         <LandingNav></LandingNav>
-        <div className=" mx-60 grid grid-cols-1 md:grid-cols-1 gap-32    p-4 items-center justify-center  text-center pt-32 flex flex-col  ">
+        <div className=" mx-60 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-32    p-4 items-center justify-center  text-center pt-32 flex flex-col  ">
             <div>
                 <h1 className=" textShadow textShadowOnly text-5xl scaleHover landingName font-bold">Avery Myers</h1>
                 <p className=" textShadow tagLines text-3xl mt-4 scaleHover">Full Stack Web Developer</p>
                 <p className=" textShadow tagLines text-2xl mt-4 font-semibold scaleHover">Let's <span className="wordChange ">{currentWord}</span> together</p>
                 <ContactList></ContactList>
             </div>
-            <div className="justify-end sm:justify-center  ">
-                
-                <div className=" scaleHover boxShadow w-80 h-64 mr-12 ">
+            <div className="  sm:justify-center flex">
+                <div className=" scaleHover boxShadow w-80 h-64 ">
                 <img src="../photos/headshot.jpg" alt="Avery Myers" className="headshot  w-full h-full object-cover" />
                 </div>
             </div>

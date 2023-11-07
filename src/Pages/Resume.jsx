@@ -97,7 +97,7 @@ export default function Resume(){
           skills: ['Designed Models, seeded data, and created routes for a three level task management app.', 'Implemented back-end routes for creation, deletion, editing, and adding users to projects.', 'Created a MySQL database and used Sequelize to interact with the database.', 'fadssf afkskfa fakf sfka faksf ad fkda fk af kadkf af kak fa fa fk da kfs'],
         },
         {
-          org:'Keller Williams Realty)',
+          org:'Keller Williams Realty',
           title: "Independent Contractor",
           date: '(2019-2021)',
           skills: ['Collaborated effectively with a team of realtors, contributing to a cooperative work environment and successful joint ventures', 'Applied creative problem-solving to overcome transaction hurdles, displaying an ability to innovate solutions under pressure', 'Coordinated transactions from start to finish, ensuring a seamless process for all parties involved and showcasing organizational skills.'],
@@ -107,7 +107,7 @@ export default function Resume(){
     return (
         <>
         <LandingNav></LandingNav>
-          <section className='resumeSection py-20  mx-64  '>
+          <section className='resumeSection py-20  sm:mx-20 md:mx-40 lg:mx-60  '>
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 justify-start  ">
               {resumeExperience.map((experience, index) => (
                 <div key={index} className="flex py-3 px-1 boxShadowOnly rounded flex-col  ">

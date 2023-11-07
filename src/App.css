@@ -12,7 +12,7 @@
 /* The switch - the box around the slider */
 
 /* I NEED TO REWORK THE SWITCH HERE */
-.switch {
+/* .switch {
   font-size: 17px;
   position: absolute;
   width: 1.75em;
@@ -60,7 +60,7 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform: translateX(1.4em) rotate(360deg);
 }
-
+ */
 
 
 
