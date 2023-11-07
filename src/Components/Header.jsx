@@ -11,30 +11,30 @@ export default function Header() {
     const navOptions = [
         {
             name: "Home",
-            // link: "/",
+            link: "/",
         },
         {
             name: "About",
-            // link: "/about",
+            link: "/about",
         },
         {
             name: "Projects",
-            // link: "/projects",
+            link: "/Projects",
         },
         {
             name: "Resume",
-            // link: "/contact",
+            link: "/Resume",
         },
         
         
         {
             name: "Contact",
-            // link: "/contact",
+            link: "/contact",
         },
     ]
     return (
         <>
-        <div className='header text-md flex items-center p-4'>
+        <div className='header bg-transparent sticky top-0 z-50 text-md flex items-center mx-60 text-black p-5 '>
             <div className='inline-flex items-center'>
                 <a href="https://www.linkedin.com/in/avery-m-108704110/" className="logo">
                     <img src="../photos/linkedIn.png" alt="Avery Myers" className="scaleHover logo h-5 w-5 mr-4" />
