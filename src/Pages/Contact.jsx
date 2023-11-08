@@ -44,12 +44,12 @@ export default function Contact() {
         
         <section className="flex flex-row justify-center gap-24 mt-16 items-center ">
           <div className="w-1/2 cols-1  ">
-            <h1 className="text-2xl text-center text-black mb-4">
+            <h1 className="text-2xl text-center text-black mb-2">
               Email Me
             </h1>
             <form
               onSubmit={handleSubmit} 
-              className="flex shadow px-4 py-4 flex-col rounded-sm"
+              className="flex shadow px-4 pb-2 flex-col rounded-sm"
             >
               <input
                 type="text"
@@ -81,7 +81,7 @@ export default function Contact() {
                 </StyledButton>
               </div>
             </form>
-            <h1 className="text-2xl text-center text-black mt-4 p-2 ">
+            <h1 className="text-2xl text-center text-black mt-4 pb-2 ">
               Other Options:
             </h1>
             <ContactList />

@@ -110,7 +110,7 @@ export default function Resume(){
           <section className='resumeSection py-20  sm:mx-20 md:mx-40 lg:mx-60  '>
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 justify-start  ">
               {resumeExperience.map((experience, index) => (
-                <div key={index} className="flex py-3 px-1 boxShadowOnly rounded flex-col  ">
+                <div key={index} className="flex py-3 px-1 shadow rounded flex-col  ">
                     <div className="resumeHeader ml-2 text-start "> 
                         <h2 className="text-2xl font-bold mb-0">{experience.org}</h2>
                         <h3 className="text-1xl font-bold  mb-0">{experience.title}</h3>

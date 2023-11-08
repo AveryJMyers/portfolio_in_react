@@ -77,7 +77,7 @@ export default function Projects(){
         <div className="projectSection py-20 sm:mx-20 md:mx-40 lg:mx-60 ">
           <div className=" cardContainer grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-12">
             {projects.map((project, index) => (
-              <div key={index} className=" boxShadowOnly rounded  projectCards p-4">
+              <div key={index} className=" shadow rounded  projectCards p-4">
                 <div className="cardHeader border-b my-1  pb-4 items-center text-center flex justify-between">
                     <div className="cardHeaderLeft text-start">
                       <h2 className=" text-3xl font-bold mb-0  ">{project.name} </h2> 
@@ -91,7 +91,7 @@ export default function Projects(){
                   <p className=" h-36 my-4 pb-1 ">{project.description}</p>
                   <div className="h-62">
                     <a href={project.deployedUrl} >
-                      <img className="w-full boxShadow projectPhoto  rounded projectHover my-4  border-b h-64 " src={`../photos/${project.img}`} alt={project.name} />
+                      <img className="w-full shadow projectPhoto  rounded projectHover my-4  border-b h-64 " src={`../photos/${project.img}`} alt={project.name} />
                     </a>
                   </div>
                   <div className="h-36">

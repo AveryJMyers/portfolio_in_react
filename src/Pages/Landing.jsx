@@ -50,11 +50,11 @@ export default function Landing() {
             </div>
             )}
             <div className="justify-end sm:justify-center ">
-                <div className=" boxShadowOnly float-right relative w-80 h-64 mr-12 ">
-                    <div className="photoBack boxShadowOnly absolute w-full h-full rounded transform translate-x-4 translate-y-4"></div>
-                    <div className=" hoverShadow  position scaleHover relative w-80 h-64">
+                <div className=" shadow float-right relative w-80 h-64 mr-12 ">
+                    <div className="photoBack shadow absolute w-full h-full rounded transform translate-x-4 translate-y-4"></div>
+                    <div className=" shadow  position  relative w-80 h-64">
                         <img src="../photos/headshot.jpg" alt="Avery Myers" className="headshot absolute w-full h-full object-cover" />
-                        <div className=" boxShadow button-container ease-in-out duration-300  transition-transform absolute rounded-sm">
+                        <div className=" shadow button-container ease-in-out duration-300  transition-transform absolute rounded-sm">
                             <StyledButton backgroundColor="blue-500" textColor="white" onClick={handleAboutMe}>About Me</StyledButton>
                         </div>
                     </div>

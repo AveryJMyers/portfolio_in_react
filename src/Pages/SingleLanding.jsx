@@ -45,7 +45,7 @@ export default function SingleLanding() {
                 <ContactList></ContactList>
             </div>
             <div className="  sm:justify-center flex">
-                <div className=" scaleHover boxShadow w-80 h-64 ">
+                <div className="  shadow w-80 h-64 ">
                 <img src="../photos/headshot.jpg" alt="Avery Myers" className="headshot  w-full h-full object-cover" />
                 </div>
             </div>
