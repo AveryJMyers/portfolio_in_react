@@ -2,6 +2,7 @@ import '../styles.css'
 import '../App.css'
 import React from 'react';
 import LandingNav from '../Components/LandingNav';
+import MobileNav from '../Components/MobileNav';
 import { useForm, ValidationError } from '@formspree/react';
 
 
@@ -106,19 +107,24 @@ export default function Resume(){
 
     return (
         <>
-        <LandingNav></LandingNav>
-          <section className='resumeSection py-20  sm:mx-20 md:mx-40 lg:mx-60  '>
+        {/* <LandingNav></LandingNav> */}
+        {window.innerWidth <= 700 ? (
+            <MobileNav /> // Display MobileNav on screens with width less than or equal to 1024px
+            ) : (
+            <LandingNav /> // Display LandingNav on screens with width greater than 1024px
+            )}
+          <section className='resumeSection   sm:mx-20 md:mx-40 lg:mx-60  '>
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 justify-start  ">
               {resumeExperience.map((experience, index) => (
                 <div key={index} className="flex py-3 px-1 shadow rounded flex-col  ">
                     <div className="resumeHeader ml-2 text-start "> 
-                        <h2 className="text-2xl font-bold mb-0">{experience.org}</h2>
-                        <h3 className="text-1xl font-bold  mb-0">{experience.title}</h3>
-                        <p className="text-1xl mb-0 flex-grow border-b pb-4 ">{experience.date}</p>
+                        <h2 className="text-2xl font-bold text-black mb-0">{experience.org}</h2>
+                        <h3 className="text-1xl font-bold mb-0">{experience.title}</h3>
+                        <p className="text-1xl mb-0 flex-grow  border-b pb-4 ">{experience.date}</p>
                     </div>
                   <ul className="ml-2">
                     {experience.skills.map((skill, skillIndex) => (
-                      <li className="p-1 text-12 border-b " key={skillIndex}>{skill}</li>
+                      <li className="p-1 text-12 border-b text-black" key={skillIndex}>{skill}</li>
                     ))}
                   </ul>
                   <p>{experience.additionalInfo}</p>

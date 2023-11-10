@@ -7,6 +7,7 @@ import StyledButton from '../Components/StyledButton';
 import HoverButton from '../Components/HoverButton';
 import Header from '../Components/Header';
 import LandingNav from '../Components/LandingNav';
+import MobileNav from '../Components/MobileNav';
 
 
 export default function Projects(){
@@ -73,29 +74,33 @@ export default function Projects(){
 
     return (
         <section className='projectSection'>
-        <LandingNav></LandingNav>
-        <div className="projectSection py-20 sm:mx-20 md:mx-40 lg:mx-60 ">
+        {window.innerWidth <= 700 ? (
+          <MobileNav /> // Display MobileNav on screens with width less than or equal to 1024px
+        ) : (
+          <LandingNav /> // Display LandingNav on screens with width greater than 1024px
+        )}
+        <div className="projectSection  sm:mx-20 md:mx-40 lg:mx-60 ">
           <div className=" cardContainer grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-12">
             {projects.map((project, index) => (
               <div key={index} className=" shadow rounded  projectCards p-4">
                 <div className="cardHeader border-b my-1  pb-4 items-center text-center flex justify-between">
                     <div className="cardHeaderLeft text-start">
-                      <h2 className=" text-3xl font-bold mb-0  ">{project.name} </h2> 
+                      <h2 className=" text-3xl text-black font-bold mb-0  ">{project.name} </h2> 
                       <h3 className=" text-1x1 ">({project.type})</h3>
                     </div>
                     <div className="flex justify-end cardHeaderRight w-1/2 ">
-                      <StyledButton type="project" className='githubButton' redirect={project.githubUrl}>Github</StyledButton>
-                      <StyledButton type="project" redirect={project.deployedUrl} className='deployedButton'>Deployed</StyledButton>
+                      <StyledButton type="project" className='githubButton' redirect={project.githubUrl}>Git</StyledButton>
+                      <StyledButton type="project" redirect={project.deployedUrl} className='deployedButton'>App</StyledButton>
                     </div>
                 </div>
-                  <p className=" h-36 my-4 pb-1 ">{project.description}</p>
+                  <p className=" h-36 my-4 pb-1 text-black ">{project.description}</p>
                   <div className="h-62">
                     <a href={project.deployedUrl} >
                       <img className="w-full shadow projectPhoto  rounded projectHover my-4  border-b h-64 " src={`../photos/${project.img}`} alt={project.name} />
                     </a>
                   </div>
                   <div className="h-36">
-                    <h4 className=" text-2xl py-1 font-bold">Tech Used:</h4>
+                    <h4 className=" text-2xl py-1 font-bold text-black">Tech Used:</h4>
                     {/* <p className="my-4 py-2">{project.techsUsed.join(', ')}</p> */}
                     <p className="grid grid-cols-3  ">
                       {project.techsUsed.map((tech, index) => (

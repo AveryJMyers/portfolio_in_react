@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import StyledButton from '../Components/StyledButton';
 import LandingNav from '../Components/LandingNav';
+import MobileNav from '../Components/MobileNav';
 import ContactList from '../Components/ContactList';
 import axios from 'axios';
 
@@ -40,11 +41,15 @@ export default function Contact() {
     return (
     <>
     <section className=' sm:mx-20 md:mx-40 lg:mx-60'>
-        <LandingNav></LandingNav>
+    {window.innerWidth <= 700 ? (
+            <MobileNav /> // Display MobileNav on screens with width less than or equal to 1024px
+            ) : (
+            <LandingNav /> // Display LandingNav on screens with width greater than 1024px
+            )}
         
-        <section className="flex flex-row justify-center gap-24 mt-16 items-center ">
+        <section className="flex flex-row justify-center gap-24  items-center  ">
           <div className="w-1/2 cols-1  ">
-            <h1 className="text-2xl text-center text-black mb-2">
+            <h1 className="text-2xl text-center text-black mb-2 text-2xl font-bold mb-0">
               Email Me
             </h1>
             <form

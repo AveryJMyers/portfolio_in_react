@@ -69,8 +69,10 @@ body {
     margin:0;
     padding:0;
     background-color: var(--background-color);
-    color: var(--text-color);
+    color: var(--text-color);    
 }
+
+
 
  /* .header, .resumeSection {
   margin: 0 17% 0 17%;
@@ -81,7 +83,7 @@ body {
   text-shadow: 0 4px 6px var(--background-shadow)
 } */
 
-.textShadowOnly{
+/* .textShadowOnly{
   text-shadow: 0 4px 6px var(--background-shadow)
 }
 
@@ -107,4 +109,4 @@ body {
 
 .hoverTextShadow:hover{
   text-shadow: 0 5px 10px var(--hovered-shadow);
-}
+} */

@@ -13,7 +13,7 @@ export default function StyledButton({
   redirect,
   type = 'submit', 
 }) {
-  let buttonStyle = ` border border-black text-center items-center justify-center tyledButton font-bold  shadowOnly text-black rounded-full m-1 ${buttonTypes[type]}`;
+  let buttonStyle = ` border border-black text-center items-center justify-center tyledButton text-sm font-bold  shadowOnly text-black rounded-full m-1 ${buttonTypes[type]}`;
 
 
 
