@@ -48,7 +48,7 @@ export default function Contact() {
             )}
         
         <section className="flex flex-row justify-center gap-24  items-center  ">
-          <div className="w-1/2 cols-1  ">
+          <div className="w-1/2 cols-1 sm:w-2/3  ">
             <h1 className="text-2xl text-center text-black mb-2 text-2xl font-bold mb-0">
               Email Me
             </h1>

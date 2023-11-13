@@ -41,36 +41,24 @@ export default function MobileNav() {
 
     return (
         <>
-        <div className='header text-2xl flex justify-center items-center bg-transparent py-24 px-4 '>
-                
-
-                <div className="md:hidden" onClick={toggleNav}>
-                    <i className="fas fa-bars">MENU</i>
+            {!isNavVisible && (
+                <div className='items-center text-center py-10'>
+                    <button onClick={toggleNav}>
+                        Menu
+                    </button>
                 </div>
-
-                <div className="hidden md:flex ">
+            )}
+            {isNavVisible && (
+                <div className="flex flex-col h-screen py-10 ">
+                    <button className='mb-16  ' onClick={toggleNav}>x</button>
                     {navOptions.map((option, index) => (
-                        <Link key={index} to={option.link} className={`navLink scaleHover mr-12 last:mr-0 ${
-                            option.link === location.pathname ? 'active' : ''
-                        }`}>
-                            {option.name}
+                        <Link key={index} to={option.link} className={`  ${option.link === location.pathname ? 'active' : ''}`}>
+                            <div className='items-center py-2 text-xl text-bold text-center'>{option.name}</div>
                         </Link>
                     ))}
                 </div>
-
-                {/* Links for mobile, hidden by default */}
-                <div className={`absolute top-0 left-0 w-full bg-white p-4 transform ${isNavVisible ? 'translate-x-0' : '-translate-x-full'} transition-transform duration-300 ease-in-out md:hidden`}>
-                    {navOptions.map((option, index) => (
-                        <Link key={index} to={option.link} onClick={() => setIsNavVisible(false)} className={`block navLink scaleHover my-2 ${
-                            option.link === location.pathname ? 'active' : ''
-                        }`}>
-                            {option.name}
-                        </Link>
-                    ))}
-                </div>
-            </div>
+            )}
         </>
-
     );
 }
 
