@@ -10,7 +10,8 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist -b gh-pages -t"
+    "deploy": "gh-pages -d dist -b gh-pages -t",
+    "custom-build": "npm install vite && vite build"
   },
   "dependencies": {
     "@formspree/react": "^2.5.1",
