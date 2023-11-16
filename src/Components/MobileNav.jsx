@@ -5,7 +5,7 @@ import '../App.css'
 import React, { useState, useEffect } from 'react';
 import LogoAnimation from './LogoAnimation';
 import ThemeToggler from './ThemeToggleButton';
-
+import StyledButton from './StyledButton';
 
 
 
@@ -43,9 +43,9 @@ export default function MobileNav() {
         <>
             {!isNavVisible && (
                 <div className='items-center text-center py-10'>
-                    <button onClick={toggleNav}>
+                    <StyledButton>
                         Menu
-                    </button>
+                    </StyledButton>
                 </div>
             )}
             {isNavVisible && (

@@ -86,10 +86,11 @@ export default function Contact() {
                 </StyledButton>
               </div>
             </form>
-            <h1 className="text-2xl text-center text-black mt-4 pb-2 ">
+            <h1 className="text-2xl text-center  shadow text-black mt-4 pb-2 ">
               Other Options:
+              <ContactList />
             </h1>
-            <ContactList />
+
           </div>
         </section>
     </section>
