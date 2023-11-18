@@ -82,26 +82,26 @@ export default function Resume(){
             "Established a GraphQL server using Apollo Server and Express, enabling efficient data retrieval and manipulation.",
             "Designed and implemented a well-structured GraphQL schema using typeDefs and resolvers, ensuring data consistency and smooth interactions.",
             "Seamlessly connected the server to the client application using GraphQL mutations and queries, enhancing real-time data exchange",
-            "Created and managed a MongoDB database using Mongoose, optimizing data storage and retrieval.",
+    
           ]
         },
         {
           org:'Cedarland Real Estate',
           title: "Buyer's Agent",
           date: '(2021-2023)',
-          skills: ['Collaborated effectively with a team of realtors, contributing to a cooperative work environment and successful joint ventures', 'Applied creative problem-solving to overcome transaction hurdles, displaying an ability to innovate solutions under pressure', 'Coordinated transactions from start to finish, ensuring a seamless process for all parties involved and showcasing organizational skills.'],
+          skills: ['Collaborated effectively with a team of realtors, contributing to a cooperative work environment and successful joint ventures', 'Applied creative problem-solving to overcome transaction hurdles, displaying an ability to innovate solutions under pressure', 'Coordinated transactions from start to finish, ensuring a seamless process for all parties involved and showcasing organizational skills.','Achieved consistent sales success by strategically marketing properties, skillfully negotiating deals, and nurturing client relationships'],
         },
         {
           org:'Task Titan',
           title: 'Back-End Developer',
           date: '2023',
-          skills: ['Designed Models, seeded data, and created routes for a three level task management app.', 'Implemented back-end routes for creation, deletion, editing, and adding users to projects.', 'Created a MySQL database and used Sequelize to interact with the database.', 'fadssf afkskfa fakf sfka faksf ad fkda fk af kadkf af kak fa fa fk da kfs'],
+          skills: ['Designed Models, seeded data, and created routes for a three level task management app.', 'Implemented back-end routes for creation, deletion, editing, and adding users to projects.', 'Created a MySQL database and used Sequelize to interact with the database.', 'Implemented various user access levels to enhance security and control within the three-level task management app, ensuring appropriate user permissions and data protection.'],
         },
         {
           org:'Keller Williams Realty',
           title: "Independent Contractor",
           date: '(2019-2021)',
-          skills: ['Collaborated effectively with a team of realtors, contributing to a cooperative work environment and successful joint ventures', 'Applied creative problem-solving to overcome transaction hurdles, displaying an ability to innovate solutions under pressure', 'Coordinated transactions from start to finish, ensuring a seamless process for all parties involved and showcasing organizational skills.'],
+          skills: ['Collaborated effectively with a team of realtors, contributing to a cooperative work environment and successful joint ventures', 'Applied creative problem-solving to overcome transaction hurdles, displaying an ability to innovate solutions under pressure', 'Coordinated transactions from start to finish, ensuring a seamless process for all parties involved and showcasing organizational skills.','Organized and hosted open houses, showcasing properties to prospective buyers and establishing a strong presence in the local real estate market.'],
         },
     ];
 
