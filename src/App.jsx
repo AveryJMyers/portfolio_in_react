@@ -17,19 +17,19 @@ import Header from './Components/Header'
 import LogoAnimation from './Components/LogoAnimation';
 import Cloud from './Components/Cloud';
 function App() {
+ 
+console.log("App.js")
+const base = '/portfolio_in_react'
 return <>
-   <div>
-      <Router>
+      <Router basename={base}>
         <Routes>
           <Route path="/" element={<SingleLanding />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/Projects" element={<Projects />} />
+          <Route path="/Resume" element={<Resume />} />
+          <Route path="/Contact" element={<Contact />} />
           <Route path="/About" element={<About />} />
-          {/* Add other routes as needed */}
         </Routes>
       </Router>
-    </div>
 </>
 }
   
