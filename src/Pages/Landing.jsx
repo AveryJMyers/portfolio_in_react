@@ -3,12 +3,27 @@ import StyledButton from '../Components/StyledButton';
 import Cloud from '../Components/Cloud';
 
 
+import '../styles.css'
+import '../App.css'
+import React, { useState, useEffect } from 'react';
+import Header from '../Components/Header';
+import StyledButton from '../Components/StyledButton';
+import LandingNav from '../Components/LandingNav';
+import ContactList from '../Components/ContactList';
+import MobileNav from '../Components/MobileNav';
 
-export default function Landing() {
-    const words = ['CREATE', 'DESIGN', 'BUILD', 'LEARN', 'DEVELOP', 'INNOVATE', 'THRIVE'];
+import Headshot from '../Photos/headshot.jpg';
+
+export default function SingleLanding() {
+    const words = ['CREATE', 'DESIGN', 'BUILD', 'LEARN',];
     const [currentWord, setCurrentWord] = useState(words[0]);
     const [modalOpen, setModalOpen] = useState(false);
     const [aboutMe, setAboutMe] = useState(false);
+
+
+
+
+
 
 
     const handleAboutMe = () => {
@@ -32,36 +47,26 @@ export default function Landing() {
 
     //  landingSection flex custom-height  pb-32 justify-between items-center
     return (
-    <section className='landingSection'>
-        
-        <div className=" mx-60 grid grid-cols-1 custom-height pb-32 lg:grid-cols-2 items-center justify-between sm:justify-center text-center ">
-            {aboutMe ? (
-            <div>
-                    <h1 className=" textShadow text-6xl scaleHover landingName font-bold border-b-4 border-black mb-4">About</h1>
-                    <p className="text-3xl textShadow ">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium qui enim magni explicabo, consequuntur corporis asperiores, ratione quisquam ipsam iure consectetur eum neque?lorem23
-                    </p>
-                </div>
+    <>
+        <section className=''>
+            {window.innerWidth <= 700 ? (
+            <MobileNav /> // Display MobileNav on screens with width less than or equal to 1024px
             ) : (
-            <div>
-                <h1 className=" textShadow textShadowOnly text-6xl scaleHover landingName font-bold">Avery Myers</h1>
-                <p className=" textShadow tagLines text-4xl mt-4 scaleHover">Full Stack Web Developer</p>
-                <p className=" textShadow tagLines text-3xl mt-4 font-semibold scaleHover">Let's <span className="wordChange ">{currentWord}</span> together</p>
-            </div>
+            <LandingNav /> // Display LandingNav on screens with width greater than 1024px
             )}
-            <div className="justify-end sm:justify-center ">
-                <div className=" shadow float-right relative w-80 h-64 mr-12 ">
-                    <div className="photoBack shadow absolute w-full h-full rounded transform translate-x-4 translate-y-4"></div>
-                    <div className=" shadow  position  relative w-80 h-64">
-                        <img src="../photos/headshot.jpg" alt="Avery Myers" className="headshot absolute w-full h-full object-cover" />
-                        <div className=" shadow button-container ease-in-out duration-300  transition-transform absolute rounded-sm">
-                            <StyledButton backgroundColor="blue-500" textColor="white" onClick={handleAboutMe}>About Me</StyledButton>
-                        </div>
-                    </div>
+            <section className='w-screen flex flex-col lg:flex-row lg:px-60 justify-center items-center '>
+                <div className="w-full text-center">
+                    <h1 className="textShadow textShadowOnly text-3xl lg:text-5xl text-black scaleHover landingName font-bold">Avery Myers</h1>
+                    <p className="textShadow tagLines text-2xl lg:text-3xl mt-4 font-semibold scaleHover">Full Stack Web Developer</p>
+                    <p className="textShadow tagLines text-2xl lg:text-2xl mt-4 font-semibold scaleHover">Let's <span className="wordChange text-black">{currentWord}</span> together</p>
+                    <ContactList />
                 </div>
-            </div>
-        </div>
-    </section>
+                <div className='w-full flex justify-center  mt-5'>
+                    <img src={Headshot} className='w-4/5 shadow' alt='Headshot'/>
+                </div>
+            </section>
+        </section>
+    </>
     );
 }
 
