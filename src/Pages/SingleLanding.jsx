@@ -51,7 +51,7 @@ export default function SingleLanding() {
                     <ContactList />
                 </div>
                 <div className='w-full flex justify-center  mt-5'>
-                    <img src='../photos/headshot.jpg' className='w-4/5 shadow' alt='Headshot'/>
+                    <img src='../Photos/headshot.jpg' className='w-4/5 shadow' alt='Headshot'/>
                 </div>
             </section>
         </section>
