@@ -4,7 +4,7 @@ import LandingNav from '../Components/LandingNav';
 import ContactList from '../Components/ContactList';
 import MobileNav from '../Components/MobileNav';
 
-import aboutMePic from '../photos/aboutMePic.jpg';
+import aboutMePic from '../Photos/aboutMePic.jpg';
 
 export default function About() {
     return (
