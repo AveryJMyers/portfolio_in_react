@@ -46,11 +46,11 @@ export default function LandingNav() {
         <div className='header text-2xl flex justify-center content-center items-center  text-bold bg-transparent  py-24'>
             <div className="flex ">
                 {navOptions.map((option, index) => (
-                    <a key={index} to={option.link} href={option.link || '#'} className={`navLink scaleHover mr-12 last:mr-0 ${
+                    <Link key={index} to={option.link} href={option.link || '#'} className={`navLink scaleHover mr-12 last:mr-0 ${
                         option.link === location.pathname ? 'active' : ''
                     }`}>
                         {option.name}
-                    </a>
+                    </Link>
                 ))}
             </div>
         </div>
