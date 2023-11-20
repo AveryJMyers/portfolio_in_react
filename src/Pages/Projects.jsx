@@ -27,7 +27,7 @@ export default function Projects(){
           type: 'Full Stack',
           deployedUrl: 'https://wedloc-84c89e3ae29d.herokuapp.com/',
           githubUrl: 'https://github.com/markthos/wedloc',
-          img: 'TechBlog' 
+          img: TechBlog 
         },
         {
           name: 'Task Titan',
@@ -36,7 +36,7 @@ export default function Projects(){
           type: 'Full Stack',
           deployedUrl: 'https://task-titan-bec51c55ebe5.herokuapp.com/',
           githubUrl: 'https://github.com/markthos/Task-Titan',
-          img: '../public/photos/taskTitan.png'
+          img: TaskTitan
         },
         {
           name: 'Loot Vault',
