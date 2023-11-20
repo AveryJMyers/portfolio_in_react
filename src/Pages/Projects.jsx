@@ -30,7 +30,7 @@ export default function Projects(){
           type: 'Full Stack',
           deployedUrl: 'https://task-titan-bec51c55ebe5.herokuapp.com/',
           githubUrl: 'https://github.com/markthos/Task-Titan',
-          img: 'taskTitan.png'
+          img: '../public/photos/taskTitan.png'
         },
         {
           name: 'Loot Vault',
