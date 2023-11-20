@@ -13,6 +13,8 @@ export default function SingleLanding() {
     const [modalOpen, setModalOpen] = useState(false);
     const [aboutMe, setAboutMe] = useState(false);
 
+    const headshot = '../Photos/headshot.jpg';
+
 
 
     const handleAboutMe = () => {
@@ -51,7 +53,7 @@ export default function SingleLanding() {
                     <ContactList />
                 </div>
                 <div className='w-full flex justify-center  mt-5'>
-                    <img src='../Photos/headshot.jpg' className='w-4/5 shadow' alt='Headshot'/>
+                    <img src={headshot} className='w-4/5 shadow' alt='Headshot'/>
                 </div>
             </section>
         </section>
