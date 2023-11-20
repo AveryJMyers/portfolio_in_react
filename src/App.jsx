@@ -19,9 +19,9 @@ import Cloud from './Components/Cloud';
 function App() {
  
 console.log("App.js")
-const base = '/portfolio_in_react'
+
 return <>
-      <Router basename={base}>
+      <Router >
         <Routes>
           <Route path="/" element={<SingleLanding />} />
           <Route path="/Projects" element={<Projects />} />

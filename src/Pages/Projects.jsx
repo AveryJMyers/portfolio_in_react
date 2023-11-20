@@ -102,7 +102,7 @@ export default function Projects(){
                   <p className=" h-36 my-4 pb-1 text-black ">{project.description}</p>
                   <div className="h-62">
                     <a href={project.deployedUrl} >
-                      <img className="w-full shadow projectPhoto  rounded projectHover my-4  border-b h-64 " src={img} alt={project.name} />
+                      <img className="w-full shadow projectPhoto  rounded projectHover my-4  border-b h-64 " src={project.img} alt={project.name} />
                     </a>
                   </div>
                   <div className="h-36">
