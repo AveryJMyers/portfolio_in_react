@@ -3,6 +3,9 @@ import StyledButton from '../Components/StyledButton';
 import LandingNav from '../Components/LandingNav';
 import ContactList from '../Components/ContactList';
 import MobileNav from '../Components/MobileNav';
+
+import aboutMePic from '../photos/aboutMePic.jpg';
+
 export default function About() {
     return (
     <>
@@ -22,7 +25,7 @@ export default function About() {
         </p>
     </div>
     <div className='lg:ml-10  mb-5 rounded shadow lg:w-2/5 h-[50%] '>
-        <img src="../photos/aboutMe.jpg" alt="Avery Myers" className="headshot shado self-start object-cover h-full" />
+        <img src={aboutMePic} alt="Avery Myers" className="headshot shado self-start object-cover h-full" />
     </div>
 </section>
 
