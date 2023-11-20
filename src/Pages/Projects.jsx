@@ -9,6 +9,12 @@ import Header from '../Components/Header';
 import LandingNav from '../Components/LandingNav';
 import MobileNav from '../Components/MobileNav';
 
+import Wedloc from '../Photos/wedloc.jpg';
+import LootVault from '../Photos/lootVault.png';
+import TechBlog from '../Photos/techBlog.png';
+import TaskTitan from '../Photos/taskTitan.png';
+
+
 
 export default function Projects(){
 
@@ -21,7 +27,7 @@ export default function Projects(){
           type: 'Full Stack',
           deployedUrl: 'https://wedloc-84c89e3ae29d.herokuapp.com/',
           githubUrl: 'https://github.com/markthos/wedloc',
-          img: 'wedloc.jpg'
+          img: 'TechBlog' 
         },
         {
           name: 'Task Titan',
@@ -96,7 +102,7 @@ export default function Projects(){
                   <p className=" h-36 my-4 pb-1 text-black ">{project.description}</p>
                   <div className="h-62">
                     <a href={project.deployedUrl} >
-                      <img className="w-full shadow projectPhoto  rounded projectHover my-4  border-b h-64 " src={`../photos/${project.img}`} alt={project.name} />
+                      <img className="w-full shadow projectPhoto  rounded projectHover my-4  border-b h-64 " src={img} alt={project.name} />
                     </a>
                   </div>
                   <div className="h-36">
