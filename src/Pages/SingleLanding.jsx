@@ -7,13 +7,17 @@ import LandingNav from '../Components/LandingNav';
 import ContactList from '../Components/ContactList';
 import MobileNav from '../Components/MobileNav';
 
+import Headshot from '../Photos/headshot.jpg';
+
 export default function SingleLanding() {
     const words = ['CREATE', 'DESIGN', 'BUILD', 'LEARN',];
     const [currentWord, setCurrentWord] = useState(words[0]);
     const [modalOpen, setModalOpen] = useState(false);
     const [aboutMe, setAboutMe] = useState(false);
 
-    const headshot = '../Photos/headshot.jpg';
+
+
+
 
 
 
@@ -53,7 +57,7 @@ export default function SingleLanding() {
                     <ContactList />
                 </div>
                 <div className='w-full flex justify-center  mt-5'>
-                    <img src={headshot} className='w-4/5 shadow' alt='Headshot'/>
+                    <img src={Headshot} className='w-4/5 shadow' alt='Headshot'/>
                 </div>
             </section>
         </section>
