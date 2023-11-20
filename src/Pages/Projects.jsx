@@ -27,7 +27,7 @@ export default function Projects(){
           type: 'Full Stack',
           deployedUrl: 'https://wedloc-84c89e3ae29d.herokuapp.com/',
           githubUrl: 'https://github.com/markthos/wedloc',
-          img: TechBlog 
+          img: Wedloc 
         },
         {
           name: 'Task Titan',
@@ -43,7 +43,7 @@ export default function Projects(){
           description: 'Loot Vault is a site for gamers to find the best deals on their favorite games. Users can search for games and see the best deals from multiple sites.',
           techsUsed: ['HTML', 'CSS', 'Javascript', 'Bulma CSS', 'APIs '],
           type: 'Front End',
-          img: 'lootVault.png'
+          img: LootVault
         },
         {
           name: 'Tech Blog',
@@ -52,7 +52,7 @@ export default function Projects(){
           type: 'Full Stack',
           deployedUrl: 'https://torvec.github.io/project_1_Loot_Vault/',
           githubUrl: 'https://github.com/Torvec/project_1_Loot_Vault',
-          img: 'techBlog.png'
+          img: TechBlog
         },
         // {
         //   name: 'Employee Directory',
