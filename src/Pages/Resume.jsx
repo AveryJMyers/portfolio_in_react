@@ -72,10 +72,10 @@ export default function Resume(){
             title: 'Warehouse Manager',
             date: '(2014-Present)',
             skills: [
-              'Conceptualized and designed a compelling pitch strategy for the Owner, leading to the successful negotiation and closure of a business deal exceeding 7 figures.', 
-              'Actively represented the company at national and international trade shows, engaging in B2B networking to expand industry connections and opportunities.', 
-              'Proactively managed in-house shipping and inventory, ensuring efficient logistics and accurate inventory levels to support the sales process.',
-              "I played a key role in a successful product rebranding effort, collaborating with cross-functional teams to refresh the brand identity, including logo, messaging, and visuals, improving our product's image."
+              'Conceptualized and executed a persuasive pitch strategy for the Owner, culminating in the successful negotiation and closure of a business deal exceeding 7 figures.', 
+              'Actively represented the company at national and international trade shows, engaging in B2B networking to broaden industry connections and foster new opportunities.', 
+              'Efficiently managed in-house shipping and inventory, ensuring streamlined logistics and precise inventory levels to bolster the sales process.',
+              "Played a pivotal role in a successful product rebranding initiative, collaborating with cross-functional teams to rejuvenate the brand identity, encompassing logo redesign, messaging, and visuals, significantly enhancing our product's market image."
           ],
         },
         {
@@ -135,10 +135,10 @@ export default function Resume(){
             ) : (
             <LandingNav /> // Display LandingNav on screens with width greater than 1024px
             )}
-          <section className='resumeSection   sm:mx-20 md:mx-40 lg:mx-60  '>
+          <section className='resumeSection mb-10 sm:mx-20 md:mx-40 lg:mx-60 '>
             <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10 justify-start  ">
               {resumeExperience.map((experience, index) => (
-                <div key={index} className="flex py-3 px-1 shadow rounded flex-col  ">
+                <div key={index} className="flex py-3 px-1  shadow rounded flex-col  ">
                     <div className="resumeHeader ml-2 text-start "> 
                         <h2 className="text-2xl font-bold text-black mb-0">{experience.org}</h2>
                         <h3 className="text-1xl font-bold mb-0">{experience.title}</h3>
@@ -146,7 +146,7 @@ export default function Resume(){
                     </div>
                   <ul className="ml-2">
                     {experience.skills.map((skill, skillIndex) => (
-                      <li className="p-1 text-12 border-b text-black" key={skillIndex}>{skill}</li>
+                      <li className="p-1 text-12 border-b  last:border-b-0 text-black" key={skillIndex}>{skill}</li>
                     ))}
                   </ul>
                   <p>{experience.additionalInfo}</p>

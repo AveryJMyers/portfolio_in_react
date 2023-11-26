@@ -17,7 +17,7 @@ export default function About() {
             )}
             <section className='grid sm:grid-cols-1 lg:grid-cols-1 sm:mx-20 md:mx-40 lg:mx-60 gap-20'>
                 <div className='grid-rows-2 textContainer'>
-                    <p className='shadow p-4'>
+                    <p className='shadow p-4 text-xl text-black'>
                         Hello! My name is Avery Myers, I am a 24 year old who is passionate about web development. Recently, I completed a Full Stack Web Development course through UC Berkeley Extension. Since the first day of class coding has been a integral part of my life. Since the bootcamp completed I have begun freelance web development, and when I am now working on a clients project I am working on my own projects. 
                         <br></br>
                         <br></br>
