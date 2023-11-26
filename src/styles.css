@@ -72,6 +72,13 @@ body {
     color: var(--text-color);    
 }
 
+.active {
+  color: black;
+  scale: 1.2;
+  font-weight: 500;
+
+}
+
 
 
  /* .header, .resumeSection {

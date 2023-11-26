@@ -49,17 +49,17 @@ export default function Contact() {
         
         <section className="flex flex-row justify-center gap-24  items-center  ">
           <div className="w-1/2 cols-1 sm:w-2/3  ">
-            <h1 className="text-2xl text-center text-black mb-2 text-2xl font-bold mb-0">
+            <h1 className="text-2xl rounded text-center text-black mb-2 text-2xl font-bold mb-0">
               Email Me
             </h1>
             <form
               onSubmit={handleSubmit} 
-              className="flex shadow px-4 pb-2 flex-col rounded-sm"
+              className="flex shadow rounded px-4 pb-2 flex-col rounded-sm"
             >
               <input
                 type="text"
                 placeholder="Name"
-                className="border shadow my-3 p-1 mb-1"
+                className="border shadow my-3 p-1 mb-1 rounded"
                 name="name"
                 value={formData.name}
                 onChange={handleChange} 
@@ -67,14 +67,14 @@ export default function Contact() {
               <input
                 type="text"
                 placeholder="Email"
-                className="border shadow my-3 p-1 mb-1"
+                className="border rounded shadow my-3 p-1 mb-1"
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
               />
               <textarea
                 placeholder="What is up?"
-                className="border shadow p-1 text-wrap my-3 mb-1"
+                className="border rounded shadow p-1 text-wrap my-3 mb-1"
                 rows="4"
                 name="message"
                 value={formData.message}
@@ -86,7 +86,7 @@ export default function Contact() {
                 </StyledButton>
               </div>
             </form>
-            <h1 className="text-2xl text-center  shadow text-black mt-4 pb-2 ">
+            <h1 className="text-2xl text-center   shadow text-black mt-4 pb-2 ">
               Other Options:
               <ContactList />
             </h1>

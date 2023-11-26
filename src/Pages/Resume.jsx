@@ -60,48 +60,70 @@ export default function Resume(){
           title: "Full Stack Web Development",
           date: "(March 2023 - October 2023)",
           skills: [
-              "Completed 18 real world like projects, including 3 group projects, and 15 individual projects.",
-              "Front End: HTML, CSS, JavaScript, jQuery, React.js, Bootstrap, TailwindCSS, Vite",
-              "Back End: Node.js, Express.js, MySQL, MongoDB, GraphQL, REST, JSON, AJAX, HTTP",
-              "Deployment: Heroku, Git, shell scripting, unit testing, linting, CI practices.",
-              "Other: Group Decision making, timelines, figma, and agile development practices."
+              "Completed 18 projects mirroring real-world scenarios, enhancing practical coding and development skills.",
+              "Group Projects (3 total): Collaborated with diverse teams to develop complex web applications. Responsibilities included brainstorming, design, coding, and debugging. Projects involved using Agile methodologies and Git for version control.",
+              "Front End Development: Created user-friendly interfaces using HTML, CSS, JavaScript, jQuery, and React.js. Focused on responsive design principles and optimized for different devices using Bootstrap and TailwindCSS.",
+              "Back End Development: Built server-side logic using Node.js and Express.js. Managed data using MySQL and MongoDB. Implemented RESTful services, GraphQL APIs, and AJAX calls for dynamic content.",
+        
         ],
         },
         {
             org: "Kennedy Holdings Inc.",
             title: 'Warehouse Manager',
             date: '(2014-Present)',
-            skills: ['Oversaw and optimized in-house shipping logistics, including stocking, delivery, and pick-up processes, enhancing operational workflow.', 'Led and motivated a small team, ensuring efficient inventory management and timely fulfillment of orders.','Created a detailed sales presentation for the CEO, effectively communicating product value and competitive positioning.', 'Sourced new products through extensive research and networking at national and international food shows.'],
+            skills: [
+              'Conceptualized and designed a compelling pitch strategy for the Owner, leading to the successful negotiation and closure of a business deal exceeding 7 figures.', 
+              'Actively represented the company at national and international trade shows, engaging in B2B networking to expand industry connections and opportunities.', 
+              'Proactively managed in-house shipping and inventory, ensuring efficient logistics and accurate inventory levels to support the sales process.',
+              "I played a key role in a successful product rebranding effort, collaborating with cross-functional teams to refresh the brand identity, including logo, messaging, and visuals, improving our product's image."
+          ],
         },
         {
           org: "Wedloc Application",
           title: "Full-Stack Developer",
           date: "(October 2023)",
           skills: [
-            "Conducted comprehensive testing of GraphQL queries and mutations using Apollo Sandbox.",
-            "Established a GraphQL server using Apollo Server and Express, enabling efficient data retrieval and manipulation.",
-            "Designed and implemented a well-structured GraphQL schema using typeDefs and resolvers, ensuring data consistency and smooth interactions.",
-            "Seamlessly connected the server to the client application using GraphQL mutations and queries, enhancing real-time data exchange",
-    
+            "Played a pivotal role in developing 'WedLoc', a unique platform for wedding photographers and videographers to organize and showcase media.",
+            "Focused on backend development: Established a GraphQL server using Apollo Server and Express for efficient data handling.",
+            "Designed a robust GraphQL schema with typeDefs and resolvers, ensuring consistent and smooth data interactions.",
+            "Integrated GraphQL queries and mutations for seamless client-server communication, facilitating real-time data exchange.",
+            "Contributed to frontend development: Implemented features like media comments, real-time chat, and event sharing for an interactive user experience.",
           ]
         },
         {
           org:'Cedarland Real Estate',
           title: "Buyer's Agent",
           date: '(2021-2023)',
-          skills: ['Collaborated effectively with a team of realtors, contributing to a cooperative work environment and successful joint ventures', 'Applied creative problem-solving to overcome transaction hurdles, displaying an ability to innovate solutions under pressure', 'Coordinated transactions from start to finish, ensuring a seamless process for all parties involved and showcasing organizational skills.','Achieved consistent sales success by strategically marketing properties, skillfully negotiating deals, and nurturing client relationships'],
+          skills: [
+            'Expertly managed a comprehensive CRM with over 50 clients, ensuring exceptional client relations and efficient follow-ups.',
+            'Skillfully conducted cold calling to convert prospects provided by a third party into viable leads, enhancing client acquisition.',
+            'Efficiently organized timelines and managed communications with multiple points of contact, ensuring seamless transaction processes.',
+            'Performed detailed comparative market assessments, providing clients with valuable insights for informed real estate decisions.',
+            'Developed and implemented creative solutions for deal closures, navigating through various challenges to achieve successful outcomes.'
+            ],
         },
         {
           org:'Task Titan',
           title: 'Back-End Developer',
           date: '2023',
-          skills: ['Designed Models, seeded data, and created routes for a three level task management app.', 'Implemented back-end routes for creation, deletion, editing, and adding users to projects.', 'Created a MySQL database and used Sequelize to interact with the database.', 'Implemented various user access levels to enhance security and control within the three-level task management app, ensuring appropriate user permissions and data protection.'],
+          skills: [
+            'Developed and structured the backend architecture for Task Titan, a complex task management application, by designing models, seeding data, and creating efficient routes.',
+            "Implemented robust back-end routes for user interactions such as project creation, deletion, editing, and user assignment, enhancing the application's functionality and user experience.",
+            'Designed and managed a MySQL database, utilizing Sequelize for database interactions, ensuring smooth data handling and storage solutions.',
+            'Developed a multi-tier user access system to enhance app security and functionality, ensuring role-specific permissions and data protection.'
+        ],
         },
         {
           org:'Keller Williams Realty',
           title: "Independent Contractor",
           date: '(2019-2021)',
-          skills: ['Collaborated effectively with a team of realtors, contributing to a cooperative work environment and successful joint ventures', 'Applied creative problem-solving to overcome transaction hurdles, displaying an ability to innovate solutions under pressure', 'Coordinated transactions from start to finish, ensuring a seamless process for all parties involved and showcasing organizational skills.','Organized and hosted open houses, showcasing properties to prospective buyers and establishing a strong presence in the local real estate market.'],
+          skills: [
+            'Conducted open houses as a primary method for lead generation, demonstrating strong interpersonal skills and an effective sales approach.',
+            'Managed client interactions and follow-ups using Salesforce, ensuring efficient client relationship management and record keeping.',
+            'Engaged in door-to-door outreach to expand client base, showcasing persistence and effective communication skills in direct marketing.',
+            'Gained practical real estate insights and expertise through collaboration with experienced agents.',
+            'Performed Comparative Market Analyses (CMAs) to provide accurate property valuations, highlighting market analysis skills.'
+        ],
         },
     ];
 

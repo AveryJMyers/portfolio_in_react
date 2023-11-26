@@ -22,15 +22,15 @@ console.log("App.js")
 const base = '/portfolio_in_react'
 
 return <>
-      <Router basename={base} >
-        <Routes>
-          <Route path="/" element={<SingleLanding />} />
-          <Route path="/Projects" element={<Projects />} />
-          <Route path="/Resume" element={<Resume />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/About" element={<About />} />
-        </Routes>
-      </Router>
+<Router>
+  <Routes>
+    <Route path={`/`} element={<SingleLanding />} />
+    <Route path={`/Projects`} element={<Projects />} />
+    <Route path={`/Resume`} element={<Resume />} />
+    <Route path={`/Contact`} element={<Contact />} />
+    <Route path={`/About`} element={<About />} />
+  </Routes>
+</Router>
 </>
 }
   
