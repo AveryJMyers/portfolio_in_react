@@ -11,6 +11,8 @@ import SingleLanding from './Pages/SingleLanding';
 import Resume from './Pages/Resume';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
+import LandingRestyle from './Pages/LandingRestyle';
+
 
 // componets
 import Header from './Components/Header'
@@ -21,10 +23,11 @@ function App() {
 console.log("App.js")
 const base = '/portfolio_in_react'
 
+
 return <>
 <Router>
   <Routes>
-    <Route path={`/`} element={<SingleLanding />} />
+    <Route path={`/`} element={<LandingRestyle/>} />
     <Route path={`/Projects`} element={<Projects />} />
     <Route path={`/Resume`} element={<Resume />} />
     <Route path={`/Contact`} element={<Contact />} />

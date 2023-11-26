@@ -51,10 +51,12 @@
   --hovered-shadow:rgba(0, 0, 0, 0.45);
   font-family: 'Roboto Mono', monospace;
   --background-color: #f6f6f6;
-  --background-color: white;
 
 }
 
+root{
+  overflow-x: hidden;
+}
 .dark:root{
   --background-color: #1B1B1E;
   --text-color: #A9BCD0;

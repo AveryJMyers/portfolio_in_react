@@ -16,25 +16,25 @@ export default function LandingNav() {
 
     const navOptions = [
         {
-            name: "Home",
+            name: "HOME",
             link: "/",
         },
         {
-            name: "About",
+            name: "ABOUT",
             link: "/About",
         },
         {
-            name: "Projects",
+            name: "PROJECTS",
             link: "/Projects",
         },
         {
-            name: "Resume",
+            name: "RESUME",
             link: "/Resume",
         },
         
         
         {
-            name: "Contact",
+            name: "CONTACT",
             link: "/contact",
         },
     ]

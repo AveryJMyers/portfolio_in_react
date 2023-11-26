@@ -12,16 +12,16 @@ export default function ContactList() {
     <>
         <section>
             <div className='flex justify-center rounded  mt-4 p-4 items-center '>
-                <a href="" className='w-10 pr-3 mr-2 scaleHover'>
+                <a href="" className='w-12 pr-3 mr-2 scaleHover'>
                     <img src={phonePic} className="  scaleHover" />
                 </a>
-                <a href="https://github.com/AveryJMyers" className= "w-10 pr-3 mr-2 scaleHover">
+                <a href="https://github.com/AveryJMyers" className= "w-12 pr-3 mr-2 scaleHover">
                     <img src={gitPic} className="" />
                 </a>
-                <a href="mailto:averyjmyers@outlook.com" className='w-10 pr-3 mr-2 scaleHover'>
+                <a href="mailto:averyjmyers@outlook.com" className='w-12 pr-3 mr-2 scaleHover'>
                     <img src={emailPic} className="" />
                 </a>
-                <a href="https://www.linkedin.com/in/avery-m-108704110/" className=' w-10 pr-3 mr-2  scaleHover'>
+                <a href="https://www.linkedin.com/in/avery-m-108704110/" className=' w-12 pr-3 mr-2  scaleHover'>
                     <img src={linkedInPic} className=" " />
                 </a>
             </div>

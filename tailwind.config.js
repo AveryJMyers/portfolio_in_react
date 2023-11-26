@@ -14,7 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        'pangolin': ['Roboto Mono', 'monospace'],
+        'lulo-clean-outline-bold': ['Lulo Clean Outline Bold', 'sans'],
+        // 'pangolin': ['Roboto Mono', 'monospace']
       }, 
       rotate: {
         '270': '270deg',
