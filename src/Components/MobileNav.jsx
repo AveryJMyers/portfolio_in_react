@@ -43,7 +43,7 @@ export default function MobileNav() {
         <>
             {!isNavVisible && (
                 <div className='items-center text-center py-10'>
-                    <StyledButton>
+                    <StyledButton onClick={toggleNav}>
                         Menu
                     </StyledButton>
                 </div>
