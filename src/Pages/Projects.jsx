@@ -117,9 +117,9 @@ export default function Projects(){
                 </div>
                   <p className=" lg:h-64 my-4 pb-1 text-black ">{project.description}</p>
                   <div className="h-62">
-                    <Link href={project.deployedUrl} >
+                    <a href={project.deployedUrl} >
                       <img className="w-full shadow projectPhoto  rounded projectHover my-4   lg:h-64 mb-5" src={project.img} alt={project.name} />
-                    </Link>
+                    </a>
                   </div>
                   <div className="h-36">
                     <h4 className=" text-2xl py-1 font-bold text-black">Tech Used:</h4>
