@@ -36,12 +36,12 @@ export default function Header() {
         <>
         <div className='header bg-transparent sticky top-0 z-50 text-md flex items-center mx-60 text-black p-5 '>
             <div className='inline-flex items-center'>
-                <a href="https://www.linkedin.com/in/avery-m-108704110/" className="logo">
+                <Link href="https://www.linkedin.com/in/avery-m-108704110/" className="logo">
                     <img src="../photos/linkedIn.png" alt="Avery Myers" className="scaleHover logo h-5 w-5 mr-4" />
-                </a>
-                <a href="https://github.com/AveryJMyers" className='logo'>
+                </Link>
+                <Link href="https://github.com/AveryJMyers" className='logo'>
                     <img src="../photos/git.png" alt="Avery Myers" className="scaleHover logo h-5 w-5 mr-4" />
-                </a>
+                </Link>
                 <div className="relative inline-block items-center">
                     <ThemeToggler className="absolute scaleHover left-0"/>
                 </div>
