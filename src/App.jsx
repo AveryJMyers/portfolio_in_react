@@ -21,12 +21,12 @@ import Cloud from './Components/Cloud';
 function App() {
  
 console.log("App.js")
-const base = '/portfolio_in_react'
+// const base = '/portfolio_in_react'
 
 
 return <>
 <Router>
-  <Routes basename={base}>
+  <Routes>
     <Route path={`/`} element={<LandingRestyle/>} />
     <Route path={`/Projects`} element={<Projects />} />
     <Route path={`/Resume`} element={<Resume />} />
