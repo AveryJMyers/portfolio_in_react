@@ -25,7 +25,7 @@ console.log("App.js")
 
 
 return <>
-<Router>
+<Router basename="/portfolio_in_react">
   <Routes>
     <Route path={`/`} element={<LandingRestyle/>} />
     <Route path={`/Projects`} element={<Projects />} />
