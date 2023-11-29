@@ -18,23 +18,23 @@ export default function LandingRestyle() {
 
     return (
         <>
-            <section className='sm:mx-20 md:mx-40 lg:mx-60'>
+            <section className='sm:mx-30 md:mx-40 lg:mx-60'>
                 {window.innerWidth <= 700 ? (
-                    <MobileNav /> // Display MobileNav on screens with width less than or equal to 700px
+                    <MobileNav />
                 ) : (
-                    <LandingNav /> // Display LandingNav on screens with width greater than 700px
+                    <LandingNav /> 
                 )}
-                    <div className="flex flex-col items-center justify-center w-full ">
-                        <div className="text-left">
-                            <h1 className="text-7xl mb-12 tracking-wider">
-                                I AM <span className="text-black  ">AVERY MYERS</span>, 
+                    <div className="flex flex-col mx-5 items-center justify-center w-full  ">
+                        <div className="text-left items-center justify-center align-center">
+                            <h1 className="lg:text-6xl text-4xl mb-12 tracking-wider ">
+                                I am <span className="text-black lg:text-7xl  ">AVERY MYERS</span>, 
                                 <br></br>
-                                A <span className="text-black">FULL STACK</span> DEVELOPER
+                                a <span className="text-black lg:text-7xl">FULL STACK</span> developer
                             </h1>
-                            <h3 className="text-5xl italic tracking-wider">    
-                                Let's <span className="text-black strong text-5xl">{currentWord}</span> together!
+                            <h3 className="lg:text-4xl text-4xl italic lg:tracking-wider">    
+                                Let's <span className="text-black strong lg:text-5xl">{currentWord}</span> together!
                             </h3>
-                            <div className='mt-16'>
+                            <div className='mt-12 mr-10 '>
                                 <ContactList/>
                             </div>
                         </div>

@@ -13,6 +13,8 @@ import Wedloc from '../Photos/wedloc.jpg';
 import LootVault from '../Photos/lootVault.png';
 import TechBlog from '../Photos/techBlog.png';
 import TaskTitan from '../Photos/taskTitan.png';
+import WeatherDashboard from '../Photos/weatherDashboard.png';
+import SocialMediaBackend from '../Photos/socialMediaBackend.png';
 
 
 
@@ -21,7 +23,7 @@ export default function Projects(){
     const projects = [
         {
           name: 'Wedloc',
-          description: "Wedloc is a cutting-edge web application tailored for wedding events. It offers a dynamic platform for guests, photographers, and videographers to collectively share and engage with wedding media. The app facilitates the organization and display of wedding photos and videos, creating a more interactive and memorable experience. Its user-friendly interface and innovative features make it an essential tool for capturing and reliving the cherished moments of wedding events.",
+          description: "Wedloc is a cutting-edge web application tailored for wedding events. It offers a dynamic platform for guests, photographers, and videographers to collectively share and engage with wedding media. The app facilitates the organization and display of wedding photos and videos, creating a more interactive and memorable experience. It's user-friendly interface and innovative features make it an essential tool for capturing and reliving the cherished moments of wedding events.",
           techsUsed: ['React', 'Node', 'MongoDB', 'GraphQL', 'Cloudinary', 'Socket.io', 'TailwindCSS', '+ more'],
           techUsed: [ 'nodeIcon.png', 'graphqlIcon.png', 'cloudinaryIcon.png', 'tailwindIcon.png'],
           type: 'Full Stack',
@@ -31,7 +33,7 @@ export default function Projects(){
         },
         {
           name: 'Task Titan',
-          description: "Task-Titan is an innovative project management web app, perfect for team collaboration. It provides project managers with tools to create, track, and update tasks efficiently. Team members can interact through comments and status updates, improving team coordination and project transparency. This web app, developed during the UC Berkeley Full Stack Web Development Bootcamp and finished in August 2023, is especially useful for handling multiple projects, streamlining task management and enhancing team productivity.",
+          description: "Task-Titan is a cutting-edge project management web app designed to enhance team collaboration. It offers project managers a suite of tools for efficiently creating, tracking, and updating tasks. Team members can engage with each other using features like comments and status updates, fostering better coordination and transparency in projects. This web app is particularly beneficial for managing multiple projects simultaneously, simplifying the task management process and boosting overall team productivity.",
           techsUsed: ['Node', 'Express', 'MySQL', 'Handlebars'],
           type: 'Full Stack',
           deployedUrl: 'https://task-titan-bec51c55ebe5.herokuapp.com/',
@@ -41,7 +43,7 @@ export default function Projects(){
         {
           name: 'Loot Vault',
           description: 
-            "Loot Vault, developed during the UC Berkeley Full Stack Web Development Bootcamp, is a sleek web application for budget-conscious gamers. It features a responsive design and simple navigation, enabling users to easily find the best deals on games. Integrating APIs like RAWG and CheapShark, it offers updated lists of top-rated and free games. Completed in June 2023, this project showcases practical utility and innovative design, making it an impressive showcase of the team's skills.",
+            "Loot Vault is a sleek web application for budget-conscious gamers. It features a responsive design and simple navigation, enabling users to easily find the best deals on games. Integrating APIs like RAWG and CheapShark, it offers updated lists of top-rated and free games. This project showcases practical utility and innovative design, making it an impressive showcase of the team's skills.",
           techsUsed: ['HTML', 'CSS', 'Javascript', 'Bulma CSS', 'APIs '],
           type: 'Front End',
           img: LootVault
@@ -63,12 +65,24 @@ export default function Projects(){
         //   type: 'Back End',
         //   img: 'photo'
         // },
-        // {
-        //   name: 'Weather Dashboard',
-        //   description: 'A weather dashboard that allows users to search for a city and see the current weather and 5 day forecast.',
-        //   techsUsed: ['HTML ', 'CSS', 'JavaScript', 'APIs '],
-        //   type: 'Front End', 
-        // },
+        {
+          name: 'Weather Dashboard',
+          description: 'The Weather Dashboard is a sleek, user-friendly web application designed for real-time weather tracking. Users can search for any city and instantly view its current weather conditions, including temperature, humidity, wind speed, and UV index, as well as a detailed 5-day forecast. Built with HTML, CSS, and JavaScript, the dashboard integrates weather APIs for accurate data. It features a responsive design, dynamic weather-dependent backgrounds, and an intuitive interface, making it ideal for anyone interested in weather updates.',
+          techsUsed: ['HTML ', 'CSS', 'JavaScript', 'APIs', 'Bootstrap'],
+          type: 'Front End', 
+          deployedUrl: 'https://averyjmyers.github.io/6_weather_forecast/',
+          githubUrl: 'https://github.com/AveryJMyers/6_weather_forecast',
+          img: WeatherDashboard,
+        },
+        {
+          name: 'Social Network ',
+          description:"The SocialSphere Network is a backend application designed for social interactions. It allows users to post thoughts, respond to others, and manage friend lists. This project, utilizing HTML, CSS, JavaScript, Express.js, MongoDB, and Mongoose ODM, primarily focuses on developing a powerful API. Key features include user posts, reactions, and friend management, all handled through a well-structured database. The application showcases the use of optional JavaScript date functions for managing timestamps, highlighting advanced techniques in backend development for social networking platforms.",
+          techsUsed: ['JavaScript', 'Express.js', 'MongoDB'],
+          type: 'Back End', 
+          deployedUrl: 'https://github.com/AveryJMyers/challenge_18_social_network',
+          githubUrl: 'https://github.com/AveryJMyers/challenge_18_social_network',
+          img: SocialMediaBackend,
+        },
         // {
         //   name: 'Javascript Quiz',
         //   description: 'A timed quiz that tests the users knowledge of javascript and tracks their high scores.',
@@ -101,10 +115,10 @@ export default function Projects(){
                       <StyledButton type="project" redirect={project.deployedUrl} className='deployedButton'>App</StyledButton>
                     </div>
                 </div>
-                  <p className=" h-64 my-4 pb-1 text-black ">{project.description}</p>
+                  <p className=" lg:h-64 my-4 pb-1 text-black ">{project.description}</p>
                   <div className="h-62">
                     <a href={project.deployedUrl} >
-                      <img className="w-full shadow projectPhoto  rounded projectHover my-4 pb-5 h-64 mb-5" src={project.img} alt={project.name} />
+                      <img className="w-full shadow projectPhoto  rounded projectHover my-4   lg:h-64 mb-5" src={project.img} alt={project.name} />
                     </a>
                   </div>
                   <div className="h-36">

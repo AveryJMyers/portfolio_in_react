@@ -95,7 +95,7 @@ export default function Resume(){
           title: "Buyer's Agent",
           date: '(2021-2023)',
           skills: [
-            'Expertly managed a comprehensive CRM with over 50 clients, ensuring exceptional client relations and efficient follow-ups.',
+            'Managed a comprehensive CRM ensuring exceptional client relations and efficient follow-ups.',
             'Skillfully conducted cold calling to convert prospects provided by a third party into viable leads, enhancing client acquisition.',
             'Efficiently organized timelines and managed communications with multiple points of contact, ensuring seamless transaction processes.',
             'Performed detailed comparative market assessments, providing clients with valuable insights for informed real estate decisions.',

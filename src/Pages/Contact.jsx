@@ -40,15 +40,15 @@ export default function Contact() {
   };
     return (
     <>
-    <section className=' sm:mx-20 md:mx-40 lg:mx-60'>
+    <section className='  lg:mx-60'>
     {window.innerWidth <= 700 ? (
             <MobileNav /> // Display MobileNav on screens with width less than or equal to 1024px
             ) : (
             <LandingNav /> // Display LandingNav on screens with width greater than 1024px
             )}
         
-        <section className="flex flex-row justify-center gap-24  items-center  ">
-          <div className="w-1/2 cols-1 sm:w-2/3  ">
+        <section className="flex flex-row justify-center gap-12  items-center  ">
+          <div className="lg:w-1/2 cols-1 w-full mx-5  ">
             <h1 className="text-2xl rounded text-center text-black mb-2 text-2xl font-bold mb-0">
               Email Me
             </h1>
@@ -86,9 +86,9 @@ export default function Contact() {
                 </StyledButton>
               </div>
             </form>
-            <h1 className="text-2xl text-center   shadow text-black mt-4 pb-2 ">
+            <h1 className="text-2xl text-center text-black mt-12  ">
               Other Options:
-              <ContactList />
+              <ContactList></ContactList>
             </h1>
 
           </div>
