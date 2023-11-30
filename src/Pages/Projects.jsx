@@ -77,7 +77,7 @@ export default function Projects(){
         },
         {
           name: 'Social Network ',
-          description:"The SocialSphere Network is a backend application designed for social interactions. It allows users to post thoughts, respond to others, and manage friend lists. This project, utilizing HTML, CSS, JavaScript, Express.js, MongoDB, and Mongoose ODM, primarily focuses on developing a powerful API. Key features include user posts, reactions, and friend management, all handled through a well-structured database. The application showcases the use of optional JavaScript date functions for managing timestamps, highlighting advanced techniques in backend development for social networking platforms.",
+          description: "This project is a backend application designed for social interactions. It enables users to share their thoughts, interact with others' posts, and manage their friend lists. Developed using HTML, CSS, JavaScript, Express.js, MongoDB, and Mongoose ODM, the focus of the project is on crafting a powerful API. Key functionalities include creating user posts, enabling reactions, and managing friend relationships, all supported by a structured database. The application also features the use of optional JavaScript date functions for timestamp management, showcasing advanced backend development skills for social networking platforms.",
           techsUsed: ['JavaScript', 'Express.js', 'MongoDB'],
           type: 'Back End', 
           deployedUrl: 'https://github.com/AveryJMyers/challenge_18_social_network',
