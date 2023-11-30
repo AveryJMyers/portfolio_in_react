@@ -76,7 +76,7 @@ export default function Projects(){
           img: WeatherDashboard,
         },
         {
-          name: 'Social Network ',
+          name: 'Social Network',
           description: "This project is a backend application designed for social interactions. It enables users to share their thoughts, interact with others' posts, and manage their friend lists. Developed using HTML, CSS, JavaScript, Express.js, MongoDB, and Mongoose ODM, the focus of the project is on crafting a powerful API. Key functionalities include creating user posts, enabling reactions, and managing friend relationships, all supported by a structured database. The application also features the use of optional JavaScript date functions for timestamp management, showcasing advanced backend development skills for social networking platforms.",
           techsUsed: ['JavaScript', 'Express.js', 'MongoDB'],
           type: 'Back End', 
