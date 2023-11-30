@@ -19,11 +19,11 @@ export default function StyledButton({
 
 
 
-  const handleButtonClick = () => {
+  const handleButtonClick = (e) => {
     if (redirect) {
-      window.location.href = redirect;
-    }
-    if (onClick) {
+      window.open(redirect, '_blank');
+      e.preventDefault();
+    } else if (onClick) {
       onClick();
     }
   };
