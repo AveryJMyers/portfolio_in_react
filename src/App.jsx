@@ -25,7 +25,7 @@ const base = '/portfolio_in_react'
 
 
 return <>
- <Router basename={base} >
+ <Router  >
   <Routes>
     <Route path={`/`} element={<LandingRestyle/>} />
     <Route path={`/Projects`} element={<Projects />} />
