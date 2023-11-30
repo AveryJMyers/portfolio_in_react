@@ -47,6 +47,8 @@ export default function Projects(){
             "Loot Vault is a sleek web application for budget-conscious gamers. It features a responsive design and simple navigation, enabling users to easily find the best deals on games. Integrating APIs like RAWG and CheapShark, it offers updated lists of top-rated and free games. This project showcases practical utility and innovative design, making it an impressive showcase of the team's skills.",
           techsUsed: ['HTML', 'CSS', 'Javascript', 'Bulma CSS', 'APIs '],
           type: 'Front End',
+          deployedUrl: 'https://torvec.github.io/Loot-Vault/',
+          githubUrl: 'https://github.com/Torvec/Loot-Vault',
           img: LootVault
         },
         {
