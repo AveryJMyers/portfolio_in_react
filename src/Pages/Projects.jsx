@@ -1,6 +1,7 @@
 
 import '../styles.css'
 import '../App.css'
+import { Link } from 'react-router-dom';
 import React from 'react';
 import ProjectButton from '../Components/HoverButton';
 import StyledButton from '../Components/StyledButton';
@@ -83,13 +84,6 @@ export default function Projects(){
           githubUrl: 'https://github.com/AveryJMyers/challenge_18_social_network',
           img: SocialMediaBackend,
         },
-        // {
-        //   name: 'Javascript Quiz',
-        //   description: 'A timed quiz that tests the users knowledge of javascript and tracks their high scores.',
-        //   techsUsed: ['HTML', 'CSS', 'Javascript'],
-        //   techUsed: ['htmlIcon.png', 'cssIcon.png', 'javascriptIcon.png'],
-        //   type: 'Front End',
-        // }
 
       ];
 
@@ -97,9 +91,9 @@ export default function Projects(){
     return (
         <section className='projectSection'>
         {window.innerWidth <= 700 ? (
-          <MobileNav /> // Display MobileNav on screens with width less than or equal to 1024px
+          <MobileNav />
         ) : (
-          <LandingNav /> // Display LandingNav on screens with width greater than 1024px
+          <LandingNav />
         )}
         <div className="projectSection mb-10 sm:mx-20 md:mx-40 lg:mx-60 ">
           <div className=" cardContainer grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-12">
@@ -123,7 +117,6 @@ export default function Projects(){
                   </div>
                   <div className="h-36">
                     <h4 className=" text-2xl py-1 font-bold text-black">Tech Used:</h4>
-                    {/* <p className="my-4 py-2">{project.techsUsed.join(', ')}</p> */}
                     <p className="grid grid-cols-3  ">
                       {project.techsUsed.map((tech, index) => (
                         <span key={index} className=" scaleHover rounded m-0.5 ">

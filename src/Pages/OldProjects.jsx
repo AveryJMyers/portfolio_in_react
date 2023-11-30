@@ -46,26 +46,6 @@ export default function Projects(){
           githubUrl: 'https://github.com/Torvec/project_1_Loot_Vault',
           img: 'techBlog.png'
         },
-        // {
-        //   name: 'Employee Directory',
-        //   description: 'A command line application to manage a company\'s employee database, using Node.js, Inquirer, and MySQL.',
-        //   techsUsed: ['Node.js', 'MySQL', ],
-        //   type: 'Back End',
-        //   img: 'photo'
-        // },
-        // {
-        //   name: 'Weather Dashboard',
-        //   description: 'A weather dashboard that allows users to search for a city and see the current weather and 5 day forecast.',
-        //   techsUsed: ['HTML ', 'CSS', 'JavaScript', 'APIs '],
-        //   type: 'Front End', 
-        // },
-        // {
-        //   name: 'Javascript Quiz',
-        //   description: 'A timed quiz that tests the users knowledge of javascript and tracks their high scores.',
-        //   techsUsed: ['HTML', 'CSS', 'Javascript'],
-        //   techUsed: ['htmlIcon.png', 'cssIcon.png', 'javascriptIcon.png'],
-        //   type: 'Front End',
-        // }
 
       ];
 
@@ -84,9 +64,6 @@ export default function Projects(){
                     <div className="flex cardHeaderRight">
                       <HoverButton redirect={project.deployedUrl} buttonText="Deployed"></HoverButton>
                       <HoverButton buttonText="Github" redirect={project.githubUrl}></HoverButton>
-                  
-                      {/* <StyledButton outline={true} redirect={project.deployedUrl}> Deployed</StyledButton>
-                      <StyledButton redirect={project.githubUrl} >Github</StyledButton> */}
                     </div>
                 </div>
                   <p className=" h-36 my-4 pb-1 ">{project.description}</p>
@@ -97,7 +74,6 @@ export default function Projects(){
                   </div>
                   <div className="h-36">
                     <h4 className=" text-2xl py-1 font-bold">Tech Used:</h4>
-                    {/* <p className="my-4 py-2">{project.techsUsed.join(', ')}</p> */}
                     <p className="grid grid-cols-3  ">
                       {project.techsUsed.map((tech, index) => (
                         <span key={index} className=" scaleHover rounded m-0.5 ">

@@ -42,9 +42,9 @@ export default function Contact() {
     <>
     <section className='  lg:mx-60'>
     {window.innerWidth <= 700 ? (
-            <MobileNav /> // Display MobileNav on screens with width less than or equal to 1024px
+            <MobileNav />
             ) : (
-            <LandingNav /> // Display LandingNav on screens with width greater than 1024px
+            <LandingNav />
             )}
         
         <section className="flex flex-row justify-center gap-12  items-center  ">

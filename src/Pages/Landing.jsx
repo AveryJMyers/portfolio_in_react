@@ -21,7 +21,7 @@ export default function Landing() {
     }
 
     useEffect(() => {
-        let currentIdx = 0; // start with the first word
+        let currentIdx = 0;
         const interval = setInterval(() => {
             currentIdx = (currentIdx + 1) % words.length;
             setCurrentWord(words[currentIdx]);
@@ -30,7 +30,6 @@ export default function Landing() {
         return () => clearInterval(interval);
     }, []);
 
-    //  landingSection flex custom-height  pb-32 justify-between items-center
     return (
     <section className='landingSection'>
         
