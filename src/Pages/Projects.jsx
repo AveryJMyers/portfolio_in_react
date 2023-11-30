@@ -101,11 +101,11 @@ export default function Projects(){
               <div key={index} className=" shadow rounded  projectCards p-4">
                 <div className="cardHeader pb-5 border-b my-1 items-center text-center flex justify-between">
                     <div className="cardHeaderLeft text-start">
-                      <h2 className="text-2xl text-black font-bold mb-0  ">{project.name} </h2> 
-                      <h3 className=" text-1x1 ">({project.type})</h3>
+                      <h2 className="text-2xl text-black font-bold mb-0 uppercase  ">{project.name} </h2> 
+                      <h3 className=" text-1x1 uppercase ">({project.type})</h3>
                     </div>
                     <div className="flex justify-end cardHeaderRight w-1/2 ">
-                      <StyledButton type="project" className='githubButton' redirect={project.githubUrl}>Git</StyledButton>
+                      <StyledButton type="project" className='githubButton ' redirect={project.githubUrl}>Git</StyledButton>
                       <StyledButton type="project" redirect={project.deployedUrl} className='deployedButton'>App</StyledButton>
                     </div>
                 </div>
@@ -116,10 +116,10 @@ export default function Projects(){
                     </a>
                   </div>
                   <div className="h-36">
-                    <h4 className=" text-2xl py-1 font-bold text-black">Tech Used:</h4>
+                    <h4 className=" text-2xl py-1 font-bold uppercase text-black">Tech Used:</h4>
                     <p className="grid grid-cols-3  ">
                       {project.techsUsed.map((tech, index) => (
-                        <span key={index} className=" scaleHover rounded m-0.5 ">
+                        <span key={index} className=" uppercase scaleHover rounded m-0.5 ">
                           {tech}
                         </span>
                       ))}

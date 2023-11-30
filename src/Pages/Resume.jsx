@@ -105,7 +105,7 @@ export default function Resume(){
         {
           org:'Task Titan',
           title: 'Back-End Developer',
-          date: '2023',
+          date: 'Aug 2023',
           skills: [
             'Developed and structured the backend architecture for Task Titan, a complex task management application, by designing models, seeding data, and creating efficient routes.',
             "Implemented robust back-end routes for user interactions such as project creation, deletion, editing, and user assignment, enhancing the application's functionality and user experience.",
@@ -140,9 +140,9 @@ export default function Resume(){
               {resumeExperience.map((experience, index) => (
                 <div key={index} className="flex py-3 px-1  shadow rounded flex-col  ">
                     <div className="resumeHeader ml-2 text-start "> 
-                        <h2 className="text-2xl font-bold text-black mb-0">{experience.org}</h2>
-                        <h3 className="text-1xl font-bold mb-0">{experience.title}</h3>
-                        <p className="text-1xl mb-0 flex-grow  border-b pb-4 ">{experience.date}</p>
+                        <h2 className="text-2xl font-bold text-black mb-0 uppercase">{experience.org}</h2>
+                        <h3 className="text-1xl font-bold mb-0 uppercase">{experience.title}</h3>
+                        <p className="text-1xl mb-0 flex-grow  border-b pb-4 uppercase ">{experience.date}</p>
                     </div>
                   <ul className="ml-2">
                     {experience.skills.map((skill, skillIndex) => (

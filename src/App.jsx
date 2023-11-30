@@ -5,9 +5,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // pages
-import Landing from './Pages/Landing'
 import Projects from './Pages/Projects';
-import SingleLanding from './Pages/SingleLanding';
 import Resume from './Pages/Resume';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
