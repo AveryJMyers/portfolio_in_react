@@ -42,13 +42,13 @@ export default function MobileNav() {
             {!isNavVisible && (
                 <div className='items-center text-center py-10'>
                     <StyledButton onClick={toggleNav}>
-                        Menu
+                        |||
                     </StyledButton>
                 </div>
             )}
             {isNavVisible && (
-                <div className="flex flex-col h-screen py-10 ">
-                    <button className='mb-16  ' onClick={toggleNav}>x</button>
+                <div className="fixed top-0 left-0 w-full h-full bg-white z-50 overflow-y-scroll">
+                    <button className='ml-4 mt-4' onClick={toggleNav}>x</button>
                     {navOptions.map((option, index) => (
                         <Link key={index} to={option.link} className={`  ${option.link === location.pathname ? 'active' : ''}`}>
                             <div className='items-center py-2 text-xl text-bold text-center'>{option.name}</div>

@@ -18,15 +18,15 @@ export default function LandingRestyle() {
 
     return (
         <>
-            <section className='sm:mx-30 md:mx-40 lg:mx-60'>
+            <section className=' md:mx-40 lg:mx-60 w-vw'>
                 {window.innerWidth <= 700 ? (
                     <MobileNav />
                 ) : (
                     <LandingNav /> 
                 )}
-                    <div className="flex flex-col mx-5 items-center justify-center w-full  ">
+                    <div className="flex flex-col mx-5 items-center justify-center">
                         <div className="text-left items-center justify-center align-center">
-                            <h1 className="lg:text-6xl text-4xl mb-12 tracking-wider ">
+                            <h1 className="lg:text-6xl text-3xl mb-12 tracking-wider ">
                                 I am <span className="text-black lg:text-7xl  ">AVERY MYERS</span>, 
                                 <br></br>
                                 a <span className="text-black lg:text-7xl">FULL STACK</span> developer
