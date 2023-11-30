@@ -57,8 +57,8 @@ export default function Projects(){
           "The Tech Blog is a CMS-style platform designed for developers, mimicking Wordpress. It allows tech enthusiasts to publish and discuss blog posts on technical subjects. Built from the ground up and hosted on Heroku, it follows the MVC architecture, using Handlebars.js for templates, Sequelize as the ORM, and express-session for authentication. Key features include post creation and commenting, a dashboard for content management, and secure login. This blog serves as a hub for developers to exchange ideas and stay updated on tech trends.",
           techsUsed: ['Node.js', 'Express.js', 'MySQL', 'Handlebars.js', 'Sequlize'],
           type: 'Full Stack',
-          deployedUrl: 'https://torvec.github.io/project_1_Loot_Vault/',
-          githubUrl: 'https://github.com/Torvec/project_1_Loot_Vault',
+          deployedUrl: '',
+          githubUrl: 'https://github.com/AveryJMyers/challenge_14_tech_blog',
           img: TechBlog
         },
         // {
@@ -82,7 +82,7 @@ export default function Projects(){
           description: "This project is a backend application designed for social interactions. It enables users to share their thoughts, interact with others' posts, and manage their friend lists. Developed using HTML, CSS, JavaScript, Express.js, MongoDB, and Mongoose ODM, the focus of the project is on crafting a powerful API. Key functionalities include creating user posts, enabling reactions, and managing friend relationships, all supported by a structured database. The application also features the use of optional JavaScript date functions for timestamp management, showcasing advanced backend development skills for social networking platforms.",
           techsUsed: ['JavaScript', 'Express.js', 'MongoDB'],
           type: 'Back End', 
-          deployedUrl: 'https://github.com/AveryJMyers/challenge_18_social_network',
+          deployedUrl: '',
           githubUrl: 'https://github.com/AveryJMyers/challenge_18_social_network',
           img: SocialMediaBackend,
         },
@@ -108,7 +108,7 @@ export default function Projects(){
                     </div>
                     <div className="flex justify-end cardHeaderRight w-1/2 ">
                       <StyledButton type="project" className='githubButton ' redirect={project.githubUrl}>Git</StyledButton>
-                      <StyledButton type="project" redirect={project.deployedUrl} className='deployedButton'>App</StyledButton>
+                      <StyledButton type="project" redirect={project.deployedUrl} disabled={!project.deployedUrl} className='deployedButton'>App</StyledButton>
                     </div>
                 </div>
                   <p className=" lg:h-64 my-4 pb-1 text-black ">{project.description}</p>
